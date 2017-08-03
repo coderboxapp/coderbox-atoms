@@ -1,0 +1,4 @@
+.storybook/**
+.vscode/**
+lib/**
+types/**

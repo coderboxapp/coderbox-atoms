@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "beautify.tabSize": 2,
+  "javascript.validate.enable": false,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "standard.options": {
+    "globals": [
+      "Event",
+      "KeyboardEvent"
+    ],
+    "ignore": [
+      "node_modules/**",
+      "types/**"
+    ],
+    "parser": "babel-eslint"
+  }
+}
