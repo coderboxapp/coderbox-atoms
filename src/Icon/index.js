@@ -4,32 +4,26 @@ import styled from 'styled-components'
 import { combine, withHelpers, withColors } from 'styled-utils'
 
 const IconElement = styled.div`
+  margin: 0 0.2em;
 `
 
-const IconGroup = styled.div`
-`
-
-const Button = ({ as = 'i', name, ...props }) => {
+const Icon = ({ as = 'i', name, ...props }) => {
   let className = cx(`icon fa fa-${name}`, props.className)
   let Element = IconElement.withComponent(as)
 
   return (
-    <Element {...props} className={className}>
-      {name}
-    </Element>
+    <Element {...props} className={className} />
   )
 }
 
-Button.defaultProps = {
-  isColor: 'white'
+Icon.defaultProps = {
+  isColor: 'white',
+  isSize: 'medium',
+  isOutlined: true,
+  noHover: true
 }
 
-const Export = combine(Button, [
+export default combine(Icon, [
   withColors,
   withHelpers
 ])
-
-Export.Group = withHelpers(IconGroup)
-Export.displayName = 'Icon'
-
-export default Export

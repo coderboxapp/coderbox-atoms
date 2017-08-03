@@ -48,6 +48,6 @@
     "react-dom": "^15.5.4",
     "styled-components": "^2.0.1",
     "styled-theme": "^0.3.3",
-    "styled-utils": "^1.1.10"
+    "styled-utils": "^1.1.11"
   }
 }

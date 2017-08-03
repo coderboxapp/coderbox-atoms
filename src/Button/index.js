@@ -6,11 +6,10 @@ import { combine, withHelpers, withColors } from 'styled-utils'
 
 const ButtonElement = styled.div`
   font-family: ${font('primary')};
-  font-size: inherit;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 1.2em;
+  padding: 0px 1.0em;
   font-weight: 400;
   cursor: pointer;
   outline: none;
@@ -19,22 +18,9 @@ const ButtonElement = styled.div`
   border-color: transparent;
   border-radius: 3px;
   margin: 0 0.25em 0 0;
-`
 
-const ButtonGroup = styled.div`
-  & > .button {
-    margin: 0 -1px 0 0;
-    border-radius: 0;
-
-  }
-
-  & > .button:first-child {
-    border-radius: 3px 0px 0px 3px;
-  }
-
-  & > .button:last-child {
-    border-radius: 0px 3px 3px 0px;
-    margin-right: 0px
+  & .icon {
+    margin: 0 5px;
   }
 `
 
@@ -50,15 +36,10 @@ const Button = ({ as = 'a', children, ...props }) => {
 }
 
 Button.defaultProps = {
-  isColor: 'link'
+  isColor: 'white'
 }
 
-const Export = combine(Button, [
+export default combine(Button, [
   withColors,
   withHelpers
 ])
-
-Export.Group = withHelpers(ButtonGroup)
-Export.displayName = Button
-
-export default Export
