@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import cx from 'classnames'
-import { withHelpers } from 'styled-utils'
+import { withModifiers, helperModifiers } from 'styled-utils'
 
 const HorizontalGroup = styled.div`
   display: flex;
@@ -41,7 +41,9 @@ const VerticalGroup = styled.div`
 
 const Group = ({ as = 'div', children, isVertical, ...props }) => {
   let className = cx('buttons', props.className)
-  let Element = isVertical ? VerticalGroup.withComponent(as) : HorizontalGroup.withComponent(as)
+  const Element = withModifiers(isVertical ? VerticalGroup.withComponent(as) : HorizontalGroup.withComponent(as), [
+    ...helperModifiers
+  ])
 
   return (
     <Element {...props} className={className}>
@@ -50,4 +52,4 @@ const Group = ({ as = 'div', children, isVertical, ...props }) => {
   )
 }
 
-export default withHelpers(Group)
+export default Group

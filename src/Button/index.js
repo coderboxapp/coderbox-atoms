@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import styled from 'styled-components'
 import { font } from 'styled-theme'
-import { combine, withHelpers, withColors } from 'styled-utils'
+import { withModifiers, helperModifiers, colorModifiers } from 'styled-utils'
 
 const ButtonElement = styled.div`
   font-family: ${font('primary')};
@@ -25,8 +25,11 @@ const ButtonElement = styled.div`
 `
 
 const Button = ({ as = 'a', children, ...props }) => {
-  let className = cx('button', props.className)
-  let Element = ButtonElement.withComponent(as)
+  const className = cx('button', props.className)
+  const Element = withModifiers(ButtonElement.withComponent(as), [
+    ...helperModifiers,
+    ...colorModifiers
+  ])
 
   return (
     <Element {...props} className={className}>
@@ -39,7 +42,4 @@ Button.defaultProps = {
   isColor: 'white'
 }
 
-export default combine(Button, [
-  withColors,
-  withHelpers
-])
+export default Button

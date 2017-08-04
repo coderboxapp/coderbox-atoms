@@ -6,21 +6,32 @@ import Icon from '.'
 
 const Control = styled.div`
   display: flex;
-  margin: 4px;
-  padding: 6px 8px;
+  margin: 8px;
+  padding: 0 8px;
   border-radius: 4px;
   align-items: center;
   background-color: ${p => p.isColor || 'transparent'};
+  > * {
+    margin-right: 0.5em;
+  }
 `
 
 storiesOf('Icon', module)
   .add('default', () => {
     return (
-      <Control>
-        <Icon name='star' isColor='black' />
-        <Icon name='github' isColor='primary' />
-        <Icon name='stack-overflow' isColor='success' />
-      </Control>
+      <div>
+        <Control>
+          <Icon name='star' isColor='black' isInverted />
+          <Icon name='star' isColor='black' />
+          <Icon name='github' isColor='primary' isInverted noHover={false} />
+          <Icon name='bug' isColor='danger' />
+        </Control>
+        <Control>
+          <Icon name='star' isColor='black' isCircular />
+          <Icon name='github' isColor='primary' isCircular />
+          <Icon name='bug' isColor='success' isSize='huge' isInverted isCircular />
+        </Control>
+      </div>
     )
   })
   .add('with different size', () => {

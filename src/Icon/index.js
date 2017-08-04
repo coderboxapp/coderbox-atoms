@@ -1,29 +1,34 @@
 import React from 'react'
 import cx from 'classnames'
 import styled from 'styled-components'
-import { combine, withHelpers, withColors } from 'styled-utils'
+import { withModifiers, helperModifiers, isColor } from 'styled-utils'
 
 const IconElement = styled.div`
-  margin: 0 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
 `
 
-const Icon = ({ as = 'i', name, ...props }) => {
-  let className = cx(`icon fa fa-${name}`, props.className)
-  let Element = IconElement.withComponent(as)
+const Icon = ({ as = 'i', name, isInverted, ...props }) => {
+  const className = cx(`icon fa fa-${name}`, props.className)
+  const inverted = false
+  const outlined = !isInverted
+
+  const Element = withModifiers(IconElement.withComponent(as), [
+    ...helperModifiers,
+    isColor
+  ])
 
   return (
-    <Element {...props} className={className} />
+    <Element {...props} isOutlined={outlined} isInverted={inverted} className={className} />
   )
 }
 
 Icon.defaultProps = {
   isColor: 'white',
-  isSize: 'medium',
-  isOutlined: true,
-  noHover: true
+  isSize: 'medium'
 }
 
-export default combine(Icon, [
-  withColors,
-  withHelpers
-])
+export default Icon

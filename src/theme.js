@@ -2,7 +2,7 @@ const theme = {}
 
 theme.palettes = {
   primary: [ '#1b8ceb' ],
-  success: [ '#00d1b2' ],
+  success: [ '#00d1b2', '#00b398' ],
   danger: [ '#e91e63' ],
   light: [ '#eee' ],
   gray: [ '#888' ],

@@ -22,8 +22,8 @@
   "author": "Ghiura Alexandru <ghalex@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@storybook/addon-info": "^3.1.9",
-    "@storybook/react": "^3.1.9",
+    "@storybook/addon-info": "^3.2.0",
+    "@storybook/react": "^3.2.3",
     "@storybook/storybook-deployer": "^2.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
@@ -46,8 +46,8 @@
     "loadash": "^0.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "styled-components": "^2.0.1",
+    "styled-components": "^2.1.2",
     "styled-theme": "^0.3.3",
-    "styled-utils": "^1.1.11"
+    "styled-utils": "^1.1.24"
   }
 }

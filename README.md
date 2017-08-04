@@ -26,13 +26,12 @@ For code example check `.stories.js` files from each component.
 
 # Components List
 
-```
--  [x] Button
--  [x] Icon
--  [] Box
--  [] Content
+- [x] Button
+- [x] Icon
+- [x] Image
+- [ ] Box
+- [ ] Content
 
-```
 # Build
 
 ```

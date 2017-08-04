@@ -28,7 +28,7 @@ storiesOf('Button', module)
           <Button isColor='primary'>Primary</Button>
           <Button isColor='success'>Success</Button>
           <Button isColor='danger'>Danger</Button>
-          <Button isColor='light'>Light</Button>
+          <Button isColor='light' isStatic as='div'>Light</Button>
           <Button isColor='black'>Black</Button>
         </Control>
         <Control isColor='#00d1b2'>
@@ -69,6 +69,10 @@ storiesOf('Button', module)
           <Icon name='star' />
           Some text
         </Button>
+        <Button isColor='success' isSize='medium' isOutlined>
+          <Icon name='star' isColor='success' />
+          Some text
+        </Button>
         <Button isColor='success' isSize='medium'>
           <Icon name='stack-overflow' />
         </Button>
@@ -80,7 +84,10 @@ storiesOf('Button', module)
       <div>
         <Control>
           <Group>
-            <Button isColor='primary' isOutlined>Primary</Button>
+            <Button isColor='primary' isOutlined>
+              <Icon name='star' isColor='primary' />
+              Primary
+            </Button>
             <Button isColor='primary' isOutlined>Success</Button>
             <Button isColor='primary' isOutlined>Danger</Button>
           </Group>
@@ -98,6 +105,14 @@ storiesOf('Button', module)
             <Button isColor='gray'>Up</Button>
             <Button isColor='gray'>Down</Button>
             <Button isColor='success'>Danger</Button>
+          </Group>
+        </Control>
+        <Control>
+          <Group>
+            <Button isColor='success'>Primary</Button>
+            <Button isColor='success' isTone={1} isPaddingless>
+              <Icon name='star' />
+            </Button>
           </Group>
         </Control>
       </div>
