@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { withModifiers, helperModifiers, isColor } from 'styled-utils'
 
 const IconElement = styled.div`
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 1.5em;
@@ -28,7 +28,7 @@ const Icon = ({ as = 'i', name, isInverted, ...props }) => {
 
 Icon.defaultProps = {
   isColor: 'white',
-  isSize: 'medium'
+  isSize: 'normal'
 }
 
 export default Icon

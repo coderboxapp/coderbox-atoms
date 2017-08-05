@@ -24,7 +24,7 @@ storiesOf('Image', module)
           <Image src='https://react.semantic-ui.com/assets/images/wireframe/image.png' isSize='small' />
           <Image src='https://react.semantic-ui.com/assets/images/wireframe/image.png' />
           <Image src='https://react.semantic-ui.com/assets/images/wireframe/image.png' isCircular isSize='large' />
-          <Image as='a' href='google.com' src='https://react.semantic-ui.com/assets/images/wireframe/image.png' isCircular isSize='big' />
+          <Image as='a' href='google.com' src='https://react.semantic-ui.com/assets/images/wireframe/image.png' isCircular isSize='xlarge' />
         </Control>
       </div>
     )

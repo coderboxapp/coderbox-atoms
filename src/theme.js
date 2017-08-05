@@ -17,13 +17,15 @@ theme.fonts = {
 
 theme.sizes = {
   maxWidth: '960px',
-  font: { tiny: '0.60rem', small: '0.75rem', medium: '1rem', large: '1.5rem', big: '2.0rem', huge: '3rem' }
+  radius: '5px',
+  font: { tiny: '0.60rem', small: '0.75rem', normal: '1rem', large: '1.5rem', xlarge: '2.0rem', huge: '3rem' }
 }
 
 theme.shadows = {
-  light: '0 1px 1px rgba(0,0,0,0.08)',
-  normal: '0 1px 2px rgba(0, 0, 0, 0.12)',
-  heavy: '0 2px 2px rgba(0, 0, 0, 0.15)'
+  normal: `
+    0 2px 3px rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.1)
+  `
 }
 
 export default theme

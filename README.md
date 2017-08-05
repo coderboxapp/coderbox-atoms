@@ -29,7 +29,8 @@ For code example check `.stories.js` files from each component.
 - [x] Button
 - [x] Icon
 - [x] Image
-- [ ] Box
+- [x] Box
+- [x] Title
 - [ ] Content
 
 # Build

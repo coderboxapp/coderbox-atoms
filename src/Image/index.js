@@ -28,7 +28,7 @@ const Icon = ({ as = 'div', src, ...props }) => {
 }
 
 Icon.defaultProps = {
-  isSize: 'medium'
+  isSize: 'normal'
 }
 
 export default Icon

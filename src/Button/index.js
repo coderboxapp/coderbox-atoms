@@ -1,11 +1,10 @@
 import React from 'react'
 import cx from 'classnames'
 import styled from 'styled-components'
-import { font } from 'styled-theme'
 import { withModifiers, helperModifiers, colorModifiers } from 'styled-utils'
 
 const ButtonElement = styled.div`
-  font-family: ${font('primary')};
+  font-family: ${p => p.theme.fonts.primary};
   display: inline-flex;
   align-items: center;
   justify-content: center;
