@@ -4,7 +4,7 @@ theme.palettes = {
   primary: [ '#1b8ceb' ],
   success: [ '#00d1b2', '#00b398' ],
   danger: [ '#e91e63' ],
-  light: [ '#eee' ],
+  light: [ '#dbdbdb' ],
   gray: [ '#888' ],
   white: [ '#fff' ],
   black: [ '#000' ]

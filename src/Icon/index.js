@@ -27,7 +27,7 @@ const Icon = ({ as = 'i', name, isInverted, ...props }) => {
 }
 
 Icon.defaultProps = {
-  isColor: 'white',
+  isColor: 'light',
   isSize: 'normal'
 }
 
