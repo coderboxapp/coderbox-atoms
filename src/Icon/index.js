@@ -7,6 +7,7 @@ const IconElement = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 1.5em;
   height: 1.5em;
 `

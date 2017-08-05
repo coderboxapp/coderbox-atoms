@@ -6,6 +6,7 @@ import { withModifiers, isSize, isCircular } from 'styled-utils'
 const ImageElement = styled.img`
   overflow: hidden;
   display: flex;
+  box-sizing: border-box;
   & img {
     width: 3.5em;
     height: 3.5em;

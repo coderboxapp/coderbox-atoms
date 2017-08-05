@@ -5,6 +5,7 @@ import { withModifiers, helperModifiers } from 'styled-utils'
 
 const HorizontalGroup = styled.div`
   display: flex;
+  box-sizing: border-box;
   & > .button {
     margin: 0 -1px 0 0;
     border-radius: 0;
