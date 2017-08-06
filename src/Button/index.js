@@ -18,8 +18,9 @@ const ButtonElement = styled.div`
   border-radius: 3px;
   margin: 0 0.25em 0 0;
   box-sizing: border-box;
+
   & .icon {
-    margin: 0 5px;
+    margin: 0 5px 0 0;
   }
 `
 
