@@ -1,10 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import Box from 'Box'
+import Icon from 'Icon'
 import Button from '.'
-import Box from '../Box'
-import Icon from '../Icon'
-import ButtonGroup from '../ButtonGroup'
 
 storiesOf('Button', module)
   .add('simple usage',
@@ -16,7 +15,8 @@ storiesOf('Button', module)
             <Button isColor='primary'>Primary</Button>
             <Button isColor='success'>Success</Button>
             <Button isColor='danger'>Danger</Button>
-            <Button isColor='light' isStatic as='div'>Light</Button>
+            <Button isColor='gray'>Gray</Button>
+            <Button isColor='gray' isTone={2}>Light</Button>
             <Button isColor='black'>Black</Button>
           </Box>
           <Box isColor='success'>
@@ -24,7 +24,8 @@ storiesOf('Button', module)
             <Button isColor='primary' isInverted>Primary</Button>
             <Button isColor='success' isInverted>Success</Button>
             <Button isColor='danger' isInverted>Danger</Button>
-            <Button isColor='light' isInverted>Light</Button>
+            <Button isColor='gray' isInverted>Gray</Button>
+            <Button isColor='gray' isTone={2} isInverted>Light</Button>
             <Button isColor='black' isInverted>Black</Button>
           </Box>
           <Box>
@@ -44,7 +45,7 @@ storiesOf('Button', module)
         <Button isColor='primary' isSize='tiny'>Tiny</Button>
         <Button isColor='success' isSize='small'>Small</Button>
         <Button isColor='danger' isSize='normal'>Normal</Button>
-        <Button isColor='light' isSize='large'>Large</Button>
+        <Button isColor='gray' isSize='large'>Large</Button>
         <Button isColor='black' isSize='xlarge'>XLarge</Button>
       </Box>
     )
@@ -57,51 +58,12 @@ storiesOf('Button', module)
           Some text
         </Button>
         <Button isColor='success' isSize='normal' isOutlined>
-          <Icon name='star' isColor='success' />
+          <Icon name='star' />
           Some text
         </Button>
-        <Button isColor='success' isSize='normal'>
+        <Button isColor='gray' isTone={2} isSize='normal' isIcon>
           <Icon name='stack-overflow' />
         </Button>
       </Box>
-    )
-  })
-  .add('group buttons', () => {
-    return (
-      <div>
-        <Box>
-          <ButtonGroup>
-            <Button isColor='primary' isOutlined>
-              <Icon name='star' isColor='primary' />
-              Primary
-            </Button>
-            <Button isColor='primary' isOutlined>Success</Button>
-            <Button isColor='primary' isOutlined>Danger</Button>
-          </ButtonGroup>
-        </Box>
-        <Box>
-          <ButtonGroup isSize='small' hasTextAlign='left'>
-            <Button isColor='primary'>Primary</Button>
-            <Button isColor='primary'>Success</Button>
-            <Button isColor='primary'>Danger</Button>
-          </ButtonGroup>
-        </Box>
-        <Box>
-          <ButtonGroup isVertical>
-            <Button isColor='success'>Primary</Button>
-            <Button isColor='gray'>Up</Button>
-            <Button isColor='gray'>Down</Button>
-            <Button isColor='success'>Danger</Button>
-          </ButtonGroup>
-        </Box>
-        <Box>
-          <ButtonGroup>
-            <Button isColor='success'>Primary</Button>
-            <Button isColor='success' isTone={1} isPaddingless>
-              <Icon name='star' />
-            </Button>
-          </ButtonGroup>
-        </Box>
-      </div>
     )
   })

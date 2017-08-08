@@ -1,29 +1,13 @@
 import React from 'react'
 import cx from 'classnames'
-import styled from 'styled-components'
-import { withModifiers, helperModifiers, isColor } from 'styled-utils'
+import * as s from './styles'
 
-const SubtitleElement = styled.h2`
-  font-family: ${p => p.theme.fonts.primary};
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.125;
-  box-sizing: border-box;
-  &:not(:last-child) {
-    margin-bottom: 1.0rem;
-  }
-`
-
-const Subtitle = ({ as = 'h2', name, isInverted, ...props }) => {
+const Subtitle = ({ as = 'h2', isInverted, ...props }) => {
   const className = cx(`subtitle`, props.className)
-
-  const Element = withModifiers(SubtitleElement.withComponent(as), [
-    ...helperModifiers,
-    isColor
-  ])
+  const Element = s.Subtitle.withComponent(as)
 
   return (
-    <Element {...props} className={className} />
+    <Element {...props} isOutlined={!isInverted} isInverted={false} className={className} />
   )
 }
 

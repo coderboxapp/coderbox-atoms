@@ -1,13 +1,13 @@
 const theme = {}
 
+// [ normal, dark, light ]
 theme.palettes = {
-  primary: [ '#1b8ceb' ],
-  success: [ '#00d1b2', '#00b398' ],
-  danger: [ '#e91e63' ],
-  light: [ '#dbdbdb' ],
-  gray: [ '#888' ],
-  white: [ '#fff' ],
-  black: [ '#000' ]
+  primary: [ '#1b8ceb', '#106cb9', '#82c3ed' ],
+  success: [ '#00d1b2', '#00b398', '#00edc9' ],
+  danger: [ '#e91e63', '#c2185b', '#f06292' ],
+  gray: [ '#888888', '#2b2b2b', '#dbdbdb' ],
+  white: [ '#fff', '#fff', '#fff' ],
+  black: [ '#000', '#000', '#000' ]
 }
 
 theme.fonts = {
