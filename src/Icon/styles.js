@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {
   isSize,
   isColor,
-  isTextColor,
   isCircular,
   isOutlined
 } from 'styled-utils'
