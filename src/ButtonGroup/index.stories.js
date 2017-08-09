@@ -1,4 +1,5 @@
 import React from 'react'
+import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Button from 'Button'
 import Box from 'Box'
@@ -6,42 +7,42 @@ import Icon from 'Icon'
 import ButtonGroup from '.'
 
 storiesOf('ButtonGroup', module)
-  .add('simple usage', () => {
+  .add('simple usage', withTheme(() => {
     return (
       <div>
         <Box>
           <ButtonGroup>
-            <Button isColor='primary' isOutlined>
+            <Button withColor='primary' isOutlined>
               <Icon name='star' />
               Primary
             </Button>
-            <Button isColor='primary' isOutlined>Success</Button>
-            <Button isColor='primary' isOutlined>Danger</Button>
+            <Button withColor='primary' isOutlined>Success</Button>
+            <Button withColor='primary' isOutlined>Danger</Button>
           </ButtonGroup>
         </Box>
         <Box>
-          <ButtonGroup isSize='small' hasTextAlign='left'>
-            <Button isColor='primary'>Primary</Button>
-            <Button isColor='primary'>Success</Button>
-            <Button isColor='primary'>Danger</Button>
+          <ButtonGroup withSize='small' hasTextAlign='left'>
+            <Button withColor='primary'>Primary</Button>
+            <Button withColor='primary'>Success</Button>
+            <Button withColor='primary'>Danger</Button>
           </ButtonGroup>
         </Box>
         <Box>
           <ButtonGroup isVertical>
-            <Button isColor='success'>Primary</Button>
-            <Button isColor='gray'>Up</Button>
-            <Button isColor='gray'>Down</Button>
-            <Button isColor='success'>Danger</Button>
+            <Button withColor='success'>Primary</Button>
+            <Button withColor='gray'>Up</Button>
+            <Button withColor='gray'>Down</Button>
+            <Button withColor='success'>Danger</Button>
           </ButtonGroup>
         </Box>
         <Box>
           <ButtonGroup>
-            <Button isColor='success'>Primary</Button>
-            <Button isColor='success' isTone={2} isStatic isIcon>
+            <Button withColor='success'>Primary</Button>
+            <Button withColor='success' withTone={2} isStatic isIcon>
               <Icon name='star' />
             </Button>
           </ButtonGroup>
         </Box>
       </div>
     )
-  })
+  }))

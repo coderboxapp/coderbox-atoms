@@ -1,11 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
-  isSize,
-  isColor,
+  withSize,
+  withColor,
   isCircular,
   isOutlined
 } from 'styled-utils'
 
+const hasBorder = ({ hasBorder }) => {
+  if (!hasBorder) return
+  return css`
+    border: 1px solid transparent;
+  `
+}
 export const Icon = styled.div`
   display: inline-flex;
   justify-content: center;
@@ -14,8 +20,9 @@ export const Icon = styled.div`
   width: 1.5em;
   height: 1.5em;
 
-  ${isSize}
+  ${withSize}
+  ${withColor}
   ${isCircular}
-  ${isColor}
   ${isOutlined}
+  ${hasBorder}
 `

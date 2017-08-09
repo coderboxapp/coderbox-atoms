@@ -12,7 +12,7 @@ const Icon = ({ as = 'i', name, isInverted, ...props }) => {
 }
 
 Icon.defaultProps = {
-  isSize: 'normal'
+  withSize: 'normal'
 }
 
 export default Icon

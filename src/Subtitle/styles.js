@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { isSize, isColor, isOutlined } from 'styled-utils'
+import { withSize, withColor, isOutlined } from 'styled-utils'
 
 export const Subtitle = styled.h2`
   font-family: ${p => p.theme.fonts.primary};
@@ -11,7 +11,7 @@ export const Subtitle = styled.h2`
     margin-bottom: 1.0rem;
   }
 
-  ${isSize}
-  ${isColor}
+  ${withSize}
+  ${withColor}
   ${isOutlined}
 `

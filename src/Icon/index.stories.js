@@ -1,42 +1,43 @@
 import React from 'react'
+import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Icon from '.'
 import Box from '../Box'
 
 storiesOf('Icon', module)
-  .add('simple usage', () => {
+  .add('simple usage', withTheme(() => {
     return (
       <div>
         <Box>
-          <Icon name='star' isColor='black' />
-          <Icon name='star' isColor='gray' />
-          <Icon name='github' isColor='primary' />
-          <Icon name='gift' isColor='success' />
-          <Icon name='bug' isColor='danger' />
+          <Icon name='star' withColor='black' />
+          <Icon name='star' withColor='gray' />
+          <Icon name='github' withColor='primary' hasBorder />
+          <Icon name='gift' withColor='success' />
+          <Icon name='bug' withColor='danger' />
         </Box>
         <Box>
-          <Icon name='star' isColor='black' isInverted />
-          <Icon name='star' isColor='gray' isInverted />
-          <Icon name='github' isColor='primary'isInverted />
-          <Icon name='gift' isColor='success' isInverted />
-          <Icon name='bug' isColor='danger' isInverted />
+          <Icon name='star' withColor='black' isInverted />
+          <Icon name='star' withColor='gray' isInverted />
+          <Icon name='github' withColor='primary'isInverted />
+          <Icon name='gift' withColor='success' isInverted />
+          <Icon name='bug' withColor='danger' isInverted />
         </Box>
         <Box>
-          <Icon name='star' isColor='black' isCircular />
-          <Icon name='github' isColor='primary' isCircular />
-          <Icon name='bug' isColor='success' isCircular />
+          <Icon name='star' withColor='black' isCircular hasBorder />
+          <Icon name='github' withColor='primary' isCircular isInverted />
+          <Icon name='bug' withColor='success' isCircular isInverted />
         </Box>
       </div>
     )
-  })
-  .add('with different size', () => {
+  }))
+  .add('with different size', withTheme(() => {
     return (
       <Box>
-        <Icon name='star' isColor='black' isInverted isSize='small' />
-        <Icon name='star' isColor='gray' isInverted />
-        <Icon name='github' isColor='primary'isInverted isSize='large' />
-        <Icon name='gift' isColor='success' isInverted isSize='xlarge' />
-        <Icon name='bug' isColor='danger' isInverted isSize='huge' />
+        <Icon name='star' withColor='black' isInverted withSize='small' />
+        <Icon name='star' withColor='gray' isInverted />
+        <Icon name='github' withColor='primary'isInverted withSize='large' />
+        <Icon name='gift' withColor='success' isInverted withSize='xlarge' />
+        <Icon name='bug' withColor='danger' isInverted withSize='huge' />
       </Box>
     )
-  })
+  }))

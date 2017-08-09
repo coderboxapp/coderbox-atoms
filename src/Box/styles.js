@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { isColor } from 'styled-utils'
+import { withColor } from 'styled-utils'
 
 const withSpace = ({ withSpace }) => {
   if (!withSpace) return
@@ -21,5 +21,5 @@ export const Box = styled.div`
   }
 
   ${withSpace}
-  ${isColor}
+  ${withColor}
 `

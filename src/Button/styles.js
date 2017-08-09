@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components'
 import {
-  isSize,
-  isColor,
-  isTextColor,
-  isHover,
+  withSize,
+  withColor,
+  withHover,
   isOutlined
 } from 'styled-utils'
 
@@ -41,9 +40,8 @@ export const Button = styled.div`
   }
 
   ${isIcon}
-  ${isSize}
-  ${isColor}
-  ${isTextColor}
-  ${isHover}
+  ${withSize}
+  ${withColor}
+  ${withHover}
   ${isOutlined}
 `

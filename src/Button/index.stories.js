@@ -1,69 +1,69 @@
 import React from 'react'
+import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import Box from 'Box'
 import Icon from 'Icon'
 import Button from '.'
 
 storiesOf('Button', module)
   .add('simple usage',
-    withInfo({})(() => {
+    withTheme(() => {
       return (
         <div>
           <Box>
             <Button>Normal</Button>
-            <Button isColor='primary'>Primary</Button>
-            <Button isColor='success'>Success</Button>
-            <Button isColor='danger'>Danger</Button>
-            <Button isColor='gray'>Gray</Button>
-            <Button isColor='gray' isTone={2}>Light</Button>
-            <Button isColor='black'>Black</Button>
+            <Button withColor='primary'>Primary</Button>
+            <Button withColor='success'>Success</Button>
+            <Button withColor='danger'>Danger</Button>
+            <Button withColor='gray'>Gray</Button>
+            <Button withColor='gray' withTone={2}>Light</Button>
+            <Button withColor='black'>Black</Button>
           </Box>
-          <Box isColor='success'>
+          <Box withColor='success'>
             <Button as='div' isInverted>Normal</Button>
-            <Button isColor='primary' isInverted>Primary</Button>
-            <Button isColor='success' isInverted>Success</Button>
-            <Button isColor='danger' isInverted>Danger</Button>
-            <Button isColor='gray' isInverted>Gray</Button>
-            <Button isColor='gray' isTone={2} isInverted>Light</Button>
-            <Button isColor='black' isInverted>Black</Button>
+            <Button withColor='primary' isInverted>Primary</Button>
+            <Button withColor='success' isInverted>Success</Button>
+            <Button withColor='danger' isInverted>Danger</Button>
+            <Button withColor='gray' isInverted>Gray</Button>
+            <Button withColor='gray' withTone={2} isInverted>Light</Button>
+            <Button withColor='black' isInverted>Black</Button>
           </Box>
           <Box>
-            <Button isColor='primary' isOutlined>Primary</Button>
-            <Button isColor='success' isOutlined>Success</Button>
-            <Button isColor='danger' isOutlined>Danger</Button>
-            <Button isColor='gray' isOutlined>Grayscale</Button>
-            <Button isColor='black' isOutlined>Black</Button>
+            <Button withColor='primary' isOutlined>Primary</Button>
+            <Button withColor='success' isOutlined>Success</Button>
+            <Button withColor='danger' isOutlined>Danger</Button>
+            <Button withColor='gray' isOutlined>Grayscale</Button>
+            <Button withColor='black' isOutlined>Black</Button>
           </Box>
         </div>
       )
     })
   )
-  .add('with different size', () => {
+  .add('with different size', withTheme(() => {
     return (
       <Box>
-        <Button isColor='primary' isSize='tiny'>Tiny</Button>
-        <Button isColor='success' isSize='small'>Small</Button>
-        <Button isColor='danger' isSize='normal'>Normal</Button>
-        <Button isColor='gray' isSize='large'>Large</Button>
-        <Button isColor='black' isSize='xlarge'>XLarge</Button>
+        <Button withColor='primary' withSize='tiny'>Tiny</Button>
+        <Button withColor='success' withSize='small'>Small</Button>
+        <Button withColor='danger' withSize='normal'>Normal</Button>
+        <Button withColor='gray' withSize='large'>Large</Button>
+        <Button withColor='black' withSize='xlarge'>XLarge</Button>
       </Box>
     )
-  })
-  .add('with icon', () => {
+  }))
+  .add('with icon', withTheme(() => {
     return (
       <Box>
-        <Button isColor='primary' isSize='normal'>
+        <Button withColor='primary' withSize='normal'>
           <Icon name='star' />
           Some text
         </Button>
-        <Button isColor='success' isSize='normal' isOutlined>
+        <Button withColor='success' withSize='normal' isOutlined>
           <Icon name='star' />
           Some text
         </Button>
-        <Button isColor='gray' isTone={2} isSize='normal' isIcon>
+        <Button withColor='gray' withTone={2} withSize='normal' isIcon>
           <Icon name='stack-overflow' />
         </Button>
       </Box>
     )
-  })
+  }))

@@ -14,7 +14,7 @@ const Button = ({ href, children, ...props }) => {
 }
 
 Button.defaultProps = {
-  isColor: 'white'
+  withColor: 'white'
 }
 
 export default Button

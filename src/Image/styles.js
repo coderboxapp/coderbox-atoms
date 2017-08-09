@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { isSize, isCircular } from 'styled-utils'
+import { withSize, isCircular } from 'styled-utils'
 
 export const Image = styled.img`
   overflow: hidden;
@@ -10,6 +10,6 @@ export const Image = styled.img`
     height: 3.5em;
   }
 
-  ${isSize}
+  ${withSize}
   ${isCircular}
 `

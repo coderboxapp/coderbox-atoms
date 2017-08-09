@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { isSize, isColor, isOutlined } from 'styled-utils'
+import { withSize, withColor, isOutlined } from 'styled-utils'
 
 export const Title = styled.h1`
   font-family: ${p => p.theme.fonts.primary};
@@ -14,7 +14,7 @@ export const Title = styled.h1`
     margin-top: -1.1rem;
   }
 
-  ${isSize}
-  ${isColor}
+  ${withSize}
+  ${withColor}
   ${isOutlined}
 `
