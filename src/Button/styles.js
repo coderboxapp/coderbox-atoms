@@ -30,6 +30,7 @@ export const Button = styled.div`
   border-color: transparent;
   border-radius: 3px;
   box-sizing: border-box;
+  line-height: 1.5;
 
   &:not(:last-child) {
     margin: 0 0.25em 0 0;

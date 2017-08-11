@@ -19,6 +19,7 @@ export const Icon = styled.div`
   box-sizing: border-box;
   width: 1.5em;
   height: 1.5em;
+  line-height: 1.5;
 
   ${withSize}
   ${withColor}

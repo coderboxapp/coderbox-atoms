@@ -38,7 +38,7 @@ storiesOf('ButtonGroup', module)
         <Box>
           <ButtonGroup>
             <Button withColor='success'>Primary</Button>
-            <Button withColor='success' withTone={2} isStatic isIcon>
+            <Button withColor='success' withTone={1} isStatic isIcon>
               <Icon name='star' />
             </Button>
           </ButtonGroup>
