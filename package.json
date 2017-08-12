@@ -1,6 +1,6 @@
 {
   "name": "@coderbox/atoms",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "React Components used at @Coderbox",
   "main": "lib/coderbox-atoms.js",
   "scripts": {
@@ -52,7 +52,6 @@
     "yargs": "^8.0.2"
   },
   "dependencies": {
-    "loadash": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "styled-components": "^2.1.2",
