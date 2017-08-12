@@ -17,8 +17,9 @@ theme.fonts = {
 
 theme.sizes = {
   maxWidth: '960px',
-  radius: '5px',
-  font: { tiny: '0.60rem', small: '0.785rem', normal: '1rem', large: '1.5rem', xlarge: '2.0rem', huge: '3rem' }
+  font: { tiny: '0.60rem', small: '0.785rem', normal: '1rem', large: '1.5rem', xlarge: '2.0rem', huge: '3rem' },
+  radius: '3px',
+  height: '2.40em'
 }
 
 theme.shadows = {

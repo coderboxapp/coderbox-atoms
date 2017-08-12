@@ -3,7 +3,7 @@ import { withSize, isCircular } from 'styled-utils'
 
 export const Image = styled.img`
   overflow: hidden;
-  display: flex;
+  display: inline-flex;
   box-sizing: border-box;
   & img {
     width: 3.5em;

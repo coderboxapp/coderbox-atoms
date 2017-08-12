@@ -19,7 +19,7 @@ const isIcon = ({ isIcon }) => {
 export const Button = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
-  height: 2.20em;
+  height: ${p => p.theme.sizes.height};
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@ export const Button = styled.div`
   outline: none;
   border: 1px solid;
   border-color: transparent;
-  border-radius: 3px;
+  border-radius: ${p => p.theme.sizes.radius};;
   box-sizing: border-box;
   line-height: 1.5;
 

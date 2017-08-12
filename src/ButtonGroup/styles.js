@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+const radius = p => p.theme.sizes.radius
+
 export const HGroup = styled.div`
   display: flex;
   box-sizing: border-box;
@@ -9,10 +11,10 @@ export const HGroup = styled.div`
     border-radius: 0;
   }
   & > .button:first-child {
-    border-radius: 3px 0px 0px 3px;
+    border-radius: ${p => `${radius(p)} 0 0 ${radius(p)}`};
   }
   & > .button:last-child {
-    border-radius: 0px 3px 3px 0px;
+    border-radius: ${p => `0 ${radius(p)} ${radius(p)} 0`};
     margin-right: 0px
   }
 `
@@ -26,10 +28,10 @@ export const VGroup = styled.div`
     border-radius: 0;
   }
   & > .button:first-child {
-    border-radius: 3px 3px 0px 0px;
+    border-radius: ${p => `${radius(p)} ${radius(p)} 0 0`};
   }
   & > .button:last-child {
-    border-radius: 0px 0px 3px 3px;
+    border-radius: ${p => `0 0 ${radius(p)} ${radius(p)} 0 0`};
     margin-right: 0px
   }
 `
