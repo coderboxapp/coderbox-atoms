@@ -7,7 +7,7 @@ const Title = ({ as = 'h1', isInverted, ...props }) => {
   const Element = s.Title.withComponent(as)
 
   return (
-    <Element {...props} isOutlined={!isInverted} isInverted={false} className={className} />
+    <Element {...props} isOutlined={!isInverted} className={className} />
   )
 }
 

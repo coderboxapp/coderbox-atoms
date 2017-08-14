@@ -28,7 +28,7 @@ storiesOf('Title + Subtitle', module)
         <Title withSize='large' withColor='primary'>Title Primary</Title>
         <Subtitle withSize='small' withColor='primary' withTone={2}>This is Subtitle primary tone 1, under title</Subtitle>
         <Title withSize='large' withColor='success'>Title Success</Title>
-        <Subtitle withSize='small' withColor='success' withTone={2}>This is Subtitle success tone 1, under title</Subtitle>
+        <Subtitle withSize='small' withColor='danger' withTone={2}>This is Subtitle success tone 1, under title</Subtitle>
       </Box>
     )
   }))
