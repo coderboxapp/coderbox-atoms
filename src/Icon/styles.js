@@ -2,8 +2,7 @@ import styled, { css } from 'styled-components'
 import {
   withSize,
   withColor,
-  isCircular,
-  isOutlined
+  isCircular
 } from 'styled-utils'
 
 const hasBorder = ({ hasBorder }) => {
@@ -24,6 +23,5 @@ export const Icon = styled.div`
   ${withSize}
   ${withColor}
   ${isCircular}
-  ${isOutlined}
   ${hasBorder}
 `

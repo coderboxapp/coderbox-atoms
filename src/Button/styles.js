@@ -2,8 +2,7 @@ import styled, { css } from 'styled-components'
 import {
   withSize,
   withColor,
-  withHover,
-  isOutlined
+  withHover
 } from 'styled-utils'
 
 const isIcon = ({ isIcon }) => {
@@ -59,7 +58,6 @@ export const Button = styled.div`
   ${isIcon}
   ${withSize}
   ${withColor}
-  ${isOutlined}
   ${isLoading}
   ${p => !p.isLoading && withHover(p)}
 `
