@@ -67,3 +67,17 @@ storiesOf('Button', module)
       </Box>
     )
   }))
+  .add('with loading', withTheme(() => {
+    return (
+      <Box>
+        <Button withColor='primary' withSize='normal' isLoading>
+          <Icon name='star' />
+          Some text
+        </Button>
+        <Button withColor='success' withSize='normal' isOutlined isLoading>
+          <Icon name='star' />
+          Some text
+        </Button>
+      </Box>
+    )
+  }))

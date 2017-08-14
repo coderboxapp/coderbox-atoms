@@ -16,6 +16,15 @@ const isIcon = ({ isIcon }) => {
   `
 }
 
+const isLoading = ({ isLoading }) => {
+  if (!isLoading) return
+
+  return css`
+    color: transparent !important;
+    user-select: none;
+  `
+}
+
 export const Button = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
@@ -28,9 +37,10 @@ export const Button = styled.div`
   outline: none;
   border: 1px solid;
   border-color: transparent;
-  border-radius: ${p => p.theme.sizes.radius};;
+  border-radius: ${p => p.theme.sizes.radius};
   box-sizing: border-box;
   line-height: 1.5;
+  position: relative;
 
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
@@ -40,9 +50,16 @@ export const Button = styled.div`
     margin: 0 5px 0 0;
   }
 
+  & .loader {
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1.3em / 2));
+  }
+
   ${isIcon}
   ${withSize}
   ${withColor}
-  ${withHover}
   ${isOutlined}
+  ${isLoading}
+  ${p => !p.isLoading && withHover(p)}
 `
