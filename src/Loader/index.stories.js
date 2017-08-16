@@ -7,10 +7,10 @@ import Loader from '.'
 storiesOf('Loader', module).add('default', withTheme(() => {
   return (
     <div>
-      <Box withColor='primary' withSpace='0.8rem'>
+      <Box color='primary' withSpace='0.8rem'>
         <Loader />
-        <Loader withColor='danger' />
-        <Loader withColor='success' />
+        <Loader color='danger' />
+        <Loader color='success' />
       </Box>
     </div>
   )

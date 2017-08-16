@@ -10,7 +10,7 @@ const Loader = (props) => {
 }
 
 Loader.defaultProps = {
-  withTone: 0
+  tone: 0
 }
 
 export default Loader

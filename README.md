@@ -27,13 +27,14 @@ For code example check `.stories.js` files from each component.
 # Components List
 
 - [x] Button
-- [x] ButtonGroup
+- [x] Group
 - [x] Icon
 - [x] Image
 - [x] Box
 - [x] Title
 - [x] Subtitle
-- [ ] Content
+- [x] Loader
+- [x] Tag
 
 # Build
 

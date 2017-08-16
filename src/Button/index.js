@@ -10,13 +10,13 @@ const Button = ({ href, children, isLoading, ...props }) => {
   return (
     <Element {...props} isLoading={isLoading} href={href} className={className}>
       {children}
-      {isLoading && <Loader withColor={props.withColor} isOutlined={props.isOutlined} isInverted />}
+      {isLoading && <Loader color={props.color} isOutlined={props.isOutlined} isInverted />}
     </Element>
   )
 }
 
 Button.defaultProps = {
-  withColor: 'white'
+  color: 'white'
 }
 
 export default Button

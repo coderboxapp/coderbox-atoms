@@ -9,26 +9,26 @@ storiesOf('Title + Subtitle', module)
   .add('with different sizes', withTheme(() => {
     return (
       <Box>
-        <Title withSize='huge'>Title Huge</Title>
-        <Subtitle withSize='large'>This is Subtitle Large, under title</Subtitle>
-        <Title withSize='xlarge'>Title XLarge</Title>
-        <Subtitle withSize='normal'>This is Subtitle Normal, under title</Subtitle>
-        <Title withSize='large'>Title Large</Title>
-        <Subtitle withSize='small'>This is <b>Subtitle</b> Small, under title</Subtitle>
-        <Title withSize='normal'>Title Normal</Title>
-        <Title withSize='small'>Title Small</Title>
+        <Title size='huge'>Title Huge</Title>
+        <Subtitle size='large'>This is Subtitle Large, under title</Subtitle>
+        <Title size='xlarge'>Title XLarge</Title>
+        <Subtitle size='normal'>This is Subtitle Normal, under title</Subtitle>
+        <Title size='large'>Title Large</Title>
+        <Subtitle size='small'>This is <b>Subtitle</b> Small, under title</Subtitle>
+        <Title size='normal'>Title Normal</Title>
+        <Title size='small'>Title Small</Title>
       </Box>
     )
   }))
   .add('with colors', withTheme(() => {
     return (
       <Box>
-        <Title withSize='large'>Title Default</Title>
-        <Subtitle withSize='small' withColor='gray'>This is Subtitle gray, under title</Subtitle>
-        <Title withSize='large' withColor='primary'>Title Primary</Title>
-        <Subtitle withSize='small' withColor='primary' withTone={2}>This is Subtitle primary tone 1, under title</Subtitle>
-        <Title withSize='large' withColor='success'>Title Success</Title>
-        <Subtitle withSize='small' withColor='danger' withTone={2}>This is Subtitle success tone 1, under title</Subtitle>
+        <Title size='large'>Title Default</Title>
+        <Subtitle size='small' color='gray'>This is Subtitle gray, under title</Subtitle>
+        <Title size='large' color='primary'>Title Primary</Title>
+        <Subtitle size='small' color='primary' tone={2}>This is Subtitle primary tone 1, under title</Subtitle>
+        <Title size='large' color='success'>Title Success</Title>
+        <Subtitle size='small' color='danger' tone={2}>This is Subtitle success tone 1, under title</Subtitle>
       </Box>
     )
   }))

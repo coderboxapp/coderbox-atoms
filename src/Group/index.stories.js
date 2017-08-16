@@ -13,33 +13,33 @@ storiesOf('Group', module)
       <div>
         <Box>
           <Group>
-            <Button withColor='primary' isOutlined>
+            <Button color='primary' isOutlined>
               <Icon name='star' />
               Primary
             </Button>
-            <Button withColor='primary' isOutlined>Success</Button>
-            <Button withColor='primary' isOutlined>Danger</Button>
+            <Button color='primary' isOutlined>Success</Button>
+            <Button color='primary' isOutlined>Danger</Button>
           </Group>
         </Box>
         <Box>
-          <Group withSize='small' hasTextAlign='left'>
-            <Button withColor='primary'>Primary</Button>
-            <Button withColor='primary'>Success</Button>
-            <Button withColor='primary'>Danger</Button>
+          <Group size='small' hasTextAlign='left'>
+            <Button color='primary'>Primary</Button>
+            <Button color='primary'>Success</Button>
+            <Button color='primary'>Danger</Button>
           </Group>
         </Box>
         <Box>
           <Group isVertical>
-            <Button withColor='success'>Primary</Button>
-            <Button withColor='gray'>Up</Button>
-            <Button withColor='gray'>Down</Button>
-            <Button withColor='success'>Danger</Button>
+            <Button color='success'>Primary</Button>
+            <Button color='gray'>Up</Button>
+            <Button color='gray'>Down</Button>
+            <Button color='success'>Danger</Button>
           </Group>
         </Box>
         <Box>
           <Group>
-            <Button withColor='success'>Primary</Button>
-            <Button withColor='success' withTone={1} isStatic isIcon>
+            <Button color='success'>Primary</Button>
+            <Button color='success' tone={1} isStatic isIcon>
               <Icon name='star' />
             </Button>
           </Group>
@@ -52,16 +52,16 @@ storiesOf('Group', module)
       <div>
         <Box withSpace='0.5rem'>
           <Group>
-            <Tag withColor='gray' withTone={1}>npm</Tag>
-            <Tag withColor='primary'>v0.5.0</Tag>
+            <Tag color='gray' tone={1}>npm</Tag>
+            <Tag color='primary'>v0.5.0</Tag>
           </Group>
           <Group>
-            <Tag withColor='gray' withTone={1}>build</Tag>
-            <Tag withColor='success'>passing</Tag>
+            <Tag color='gray' tone={1}>build</Tag>
+            <Tag color='success'>passing</Tag>
           </Group>
           <Group>
-            <Tag withColor='success'>javascript</Tag>
-            <Tag withColor='success' withTone={1} isDelete />
+            <Tag color='success'>javascript</Tag>
+            <Tag color='success' tone={1} isDelete />
           </Group>
         </Box>
       </div>

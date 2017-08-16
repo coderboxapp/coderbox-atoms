@@ -1,6 +1,6 @@
 import Box from 'Box'
 import Button from 'Button'
-import Group from 'ButtonGroup'
+import Group from 'Group'
 import Icon from 'Icon'
 import Image from 'Image'
 import Subtitle from 'Subtitle'

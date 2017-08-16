@@ -9,11 +9,11 @@ storiesOf('Tag', module).add('default', withTheme(() => {
     <div>
       <Box>
         <Tag>Normal</Tag>
-        <Tag withColor='gray'>Gray</Tag>
-        <Tag withColor='primary'>Primary</Tag>
-        <Tag withColor='success'>Success</Tag>
-        <Tag withColor='success' isDelete />
-        <Tag withColor='gray' withTone={2} isDelete />
+        <Tag color='gray'>Gray</Tag>
+        <Tag color='primary'>Primary</Tag>
+        <Tag color='success'>Success</Tag>
+        <Tag color='success' isDelete />
+        <Tag color='gray' tone={2} isDelete />
       </Box>
     </div>
   )

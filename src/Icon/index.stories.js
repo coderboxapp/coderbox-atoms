@@ -9,23 +9,23 @@ storiesOf('Icon', module)
     return (
       <div>
         <Box>
-          <Icon name='star' withColor='black' />
-          <Icon name='star' withColor='gray' />
-          <Icon name='github' withColor='primary' hasBorder />
-          <Icon name='gift' withColor='success' />
-          <Icon name='bug' withColor='danger' />
+          <Icon name='star' color='black' />
+          <Icon name='star' color='gray' />
+          <Icon name='github' color='primary' hasBorder />
+          <Icon name='gift' color='success' />
+          <Icon name='bug' color='danger' />
         </Box>
         <Box>
-          <Icon name='star' withColor='black' isInverted />
-          <Icon name='star' withColor='gray' isInverted />
-          <Icon name='github' withColor='primary'isInverted />
-          <Icon name='gift' withColor='success' isInverted />
-          <Icon name='bug' withColor='danger' isInverted />
+          <Icon name='star' color='black' isInverted />
+          <Icon name='star' color='gray' isInverted />
+          <Icon name='github' color='primary'isInverted />
+          <Icon name='gift' color='success' isInverted />
+          <Icon name='bug' color='danger' isInverted />
         </Box>
         <Box>
-          <Icon name='star' withColor='black' isCircular hasBorder />
-          <Icon name='github' withColor='primary' isCircular isInverted />
-          <Icon name='bug' withColor='success' isCircular isInverted />
+          <Icon name='star' color='black' isCircular hasBorder />
+          <Icon name='github' color='primary' isCircular isInverted />
+          <Icon name='bug' color='success' isCircular isInverted />
         </Box>
       </div>
     )
@@ -33,11 +33,11 @@ storiesOf('Icon', module)
   .add('with different size', withTheme(() => {
     return (
       <Box>
-        <Icon name='star' withColor='black' isInverted withSize='small' />
-        <Icon name='star' withColor='gray' isInverted />
-        <Icon name='github' withColor='primary'isInverted withSize='large' />
-        <Icon name='gift' withColor='success' isInverted withSize='xlarge' />
-        <Icon name='bug' withColor='danger' isInverted withSize='huge' />
+        <Icon name='star' color='black' isInverted size='small' />
+        <Icon name='star' color='gray' isInverted />
+        <Icon name='github' color='primary'isInverted size='large' />
+        <Icon name='gift' color='success' isInverted size='xlarge' />
+        <Icon name='bug' color='danger' isInverted size='huge' />
       </Box>
     )
   }))

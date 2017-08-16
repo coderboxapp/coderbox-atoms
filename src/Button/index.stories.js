@@ -12,28 +12,28 @@ storiesOf('Button', module)
         <div>
           <Box>
             <Button>Normal</Button>
-            <Button withColor='primary'>Primary</Button>
-            <Button withColor='success'>Success</Button>
-            <Button withColor='danger'>Danger</Button>
-            <Button withColor='gray'>Gray</Button>
-            <Button withColor='gray' withTone={2}>Light</Button>
-            <Button withColor='black'>Black</Button>
+            <Button color='primary'>Primary</Button>
+            <Button color='success'>Success</Button>
+            <Button color='danger'>Danger</Button>
+            <Button color='gray'>Gray</Button>
+            <Button color='gray' tone={2}>Light</Button>
+            <Button color='black'>Black</Button>
           </Box>
-          <Box withColor='success'>
+          <Box color='success'>
             <Button as='div' isInverted>Normal</Button>
-            <Button withColor='primary' isInverted>Primary</Button>
-            <Button withColor='success' isInverted>Success</Button>
-            <Button withColor='danger' isInverted>Danger</Button>
-            <Button withColor='gray' isInverted>Gray</Button>
-            <Button withColor='gray' withTone={2} isInverted>Light</Button>
-            <Button withColor='black' isInverted>Black</Button>
+            <Button color='primary' isInverted>Primary</Button>
+            <Button color='success' isInverted>Success</Button>
+            <Button color='danger' isInverted>Danger</Button>
+            <Button color='gray' isInverted>Gray</Button>
+            <Button color='gray' tone={2} isInverted>Light</Button>
+            <Button color='black' isInverted>Black</Button>
           </Box>
           <Box>
-            <Button withColor='primary' isOutlined>Primary</Button>
-            <Button withColor='success' isOutlined>Success</Button>
-            <Button withColor='danger' isOutlined>Danger</Button>
-            <Button withColor='gray' isOutlined>Grayscale</Button>
-            <Button withColor='black' isOutlined>Black</Button>
+            <Button color='primary' isOutlined>Primary</Button>
+            <Button color='success' isOutlined>Success</Button>
+            <Button color='danger' isOutlined>Danger</Button>
+            <Button color='gray' isOutlined>Grayscale</Button>
+            <Button color='black' isOutlined>Black</Button>
           </Box>
         </div>
       )
@@ -42,26 +42,26 @@ storiesOf('Button', module)
   .add('with different size', withTheme(() => {
     return (
       <Box>
-        <Button withColor='primary' withSize='tiny'>Tiny</Button>
-        <Button withColor='success' withSize='small'>Small</Button>
-        <Button withColor='danger' withSize='normal'>Normal</Button>
-        <Button withColor='gray' withSize='large'>Large</Button>
-        <Button withColor='black' withSize='xlarge'>XLarge</Button>
+        <Button color='primary' size='tiny'>Tiny</Button>
+        <Button color='success' size='small'>Small</Button>
+        <Button color='danger' size='normal'>Normal</Button>
+        <Button color='gray' size='large'>Large</Button>
+        <Button color='black' size='xlarge'>XLarge</Button>
       </Box>
     )
   }))
   .add('with icon', withTheme(() => {
     return (
       <Box>
-        <Button withColor='primary' withSize='normal'>
+        <Button color='primary' size='normal'>
           <Icon name='star' />
           Some text
         </Button>
-        <Button withColor='success' withSize='normal' isOutlined>
+        <Button color='success' size='normal' isOutlined>
           <Icon name='star' />
           Some text
         </Button>
-        <Button withColor='gray' withTone={2} withSize='normal' isIcon>
+        <Button color='gray' tone={2} size='normal' isIcon>
           <Icon name='stack-overflow' />
         </Button>
       </Box>
@@ -70,11 +70,11 @@ storiesOf('Button', module)
   .add('with loading', withTheme(() => {
     return (
       <Box>
-        <Button withColor='primary' withSize='normal' isLoading>
+        <Button color='primary' size='normal' isLoading>
           <Icon name='star' />
           Some text
         </Button>
-        <Button withColor='success' withSize='normal' isOutlined isLoading>
+        <Button color='success' size='normal' isOutlined isLoading>
           <Icon name='star' />
           Some text
         </Button>

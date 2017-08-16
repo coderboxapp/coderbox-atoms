@@ -10,7 +10,7 @@ const Tag = ({ isDelete, ...props }) => {
 }
 
 Tag.defaultProps = {
-  withSize: 'small'
+  size: 'small'
 }
 
 export default Tag

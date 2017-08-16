@@ -4,6 +4,9 @@ import { withColor, withSize } from 'styled-utils'
 const isDelete = ({ isDelete }) => {
   if (!isDelete) return
   return css`
+    width: 1.915em;
+    padding: 0;
+
     &::before,
     &::after {
       background-color: currentColor;

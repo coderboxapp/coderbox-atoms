@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'
 
-const Icon = ({ as = 'div', src, ...props }) => {
+const Image = ({ as = 'div', src, ...props }) => {
   const className = cx(`image`, props.className)
   const Element = s.Image.withComponent(as)
 
@@ -13,8 +13,8 @@ const Icon = ({ as = 'div', src, ...props }) => {
   )
 }
 
-Icon.defaultProps = {
-  withSize: 'normal'
+Image.defaultProps = {
+  size: 'normal'
 }
 
-export default Icon
+export default Image
