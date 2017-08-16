@@ -10,6 +10,9 @@ export const Subtitle = styled.h2`
   &:not(:last-child) {
     margin-bottom: 1.0rem;
   }
+  & + .subtitle {
+    margin-top: -1.1rem;
+  }
 
   ${withSize}
   ${withColor}

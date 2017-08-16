@@ -5,7 +5,9 @@ import Icon from 'Icon'
 import Image from 'Image'
 import Subtitle from 'Subtitle'
 import Tag from 'Tag'
+import Text from 'Text'
 import Title from 'Title'
+
 import theme from './theme'
 
 export {
@@ -16,6 +18,7 @@ export {
   Image,
   Subtitle,
   Tag,
+  Text,
   Title,
   theme
 }
