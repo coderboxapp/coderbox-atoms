@@ -2,46 +2,67 @@ import React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Button from 'Button'
+import Tag from 'Tag'
 import Box from 'Box'
 import Icon from 'Icon'
-import ButtonGroup from '.'
+import Group from '.'
 
-storiesOf('ButtonGroup', module)
-  .add('simple usage', withTheme(() => {
+storiesOf('Group', module)
+  .add('group buttons', withTheme(() => {
     return (
       <div>
         <Box>
-          <ButtonGroup>
+          <Group>
             <Button withColor='primary' isOutlined>
               <Icon name='star' />
               Primary
             </Button>
             <Button withColor='primary' isOutlined>Success</Button>
             <Button withColor='primary' isOutlined>Danger</Button>
-          </ButtonGroup>
+          </Group>
         </Box>
         <Box>
-          <ButtonGroup withSize='small' hasTextAlign='left'>
+          <Group withSize='small' hasTextAlign='left'>
             <Button withColor='primary'>Primary</Button>
             <Button withColor='primary'>Success</Button>
             <Button withColor='primary'>Danger</Button>
-          </ButtonGroup>
+          </Group>
         </Box>
         <Box>
-          <ButtonGroup isVertical>
+          <Group isVertical>
             <Button withColor='success'>Primary</Button>
             <Button withColor='gray'>Up</Button>
             <Button withColor='gray'>Down</Button>
             <Button withColor='success'>Danger</Button>
-          </ButtonGroup>
+          </Group>
         </Box>
         <Box>
-          <ButtonGroup>
+          <Group>
             <Button withColor='success'>Primary</Button>
             <Button withColor='success' withTone={1} isStatic isIcon>
               <Icon name='star' />
             </Button>
-          </ButtonGroup>
+          </Group>
+        </Box>
+      </div>
+    )
+  }))
+  .add('group tags', withTheme(() => {
+    return (
+      <div>
+        <Box withSpace='0.5rem'>
+          <Group>
+            <Tag withColor='gray' withTone={1}>npm</Tag>
+            <Tag withColor='primary'>v0.5.0</Tag>
+          </Group>
+          <Group>
+            <Tag withColor='gray' withTone={1}>build</Tag>
+            <Tag withColor='success'>passing</Tag>
+          </Group>
+          <Group>
+            <Tag withColor='success'>javascript</Tag>
+            <Tag withColor='success' withTone={1} isDelete />
+          </Group>
         </Box>
       </div>
     )
