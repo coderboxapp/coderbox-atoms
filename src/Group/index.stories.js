@@ -50,7 +50,7 @@ storiesOf('Group', module)
   .add('group tags', withTheme(() => {
     return (
       <div>
-        <Box withSpace='0.5rem'>
+        <Box vSpace='0.5rem'>
           <Group>
             <Tag color='gray' tone={1}>npm</Tag>
             <Tag color='primary'>v0.5.0</Tag>

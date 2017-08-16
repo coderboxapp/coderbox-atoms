@@ -1,11 +1,13 @@
 import styled, { css } from 'styled-components'
 import { withColor } from 'styled-utils'
 
-const withSpace = ({ withSpace }) => {
-  if (!withSpace) return
+const addSpace = ({ hSpace, vSpace }) => {
+  if (!hSpace && !vSpace) return
+
   return css`
-    > * {
-      margin-bottom: ${withSpace} !important;
+    > *:not(:last-child) {
+      ${hSpace && `margin-right: ${hSpace} !important;`}
+      ${vSpace && `margin-bottom: ${vSpace} !important;`}
     }
   `
 }
@@ -20,6 +22,6 @@ export const Box = styled.div`
     margin-bottom: 1.0rem;
   }
 
-  ${withSpace}
+  ${addSpace}
   ${withColor}
 `
