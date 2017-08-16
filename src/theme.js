@@ -5,7 +5,7 @@ theme.palettes = {
   primary: [ '#1b8ceb', '#106cb9', '#82c3ed' ],
   success: [ '#00d1b2', '#00b398', '#00edc9' ],
   danger: [ '#e91e63', '#c2185b', '#f06292' ],
-  gray: [ '#888888', '#2b2b2b', '#dbdbdb' ],
+  gray: [ '#888888', '#2b2b2b', '#f1f1f1' ],
   white: [ '#fff', '#fff', '#fff' ],
   black: [ '#000', '#000', '#000' ]
 }

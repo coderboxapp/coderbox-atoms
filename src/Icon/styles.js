@@ -16,8 +16,8 @@ export const Icon = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.6em;
+  height: 1.6em;
   line-height: 1.5;
 
   ${withSize}

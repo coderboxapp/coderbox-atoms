@@ -5,6 +5,7 @@ export const Image = styled.img`
   overflow: hidden;
   display: inline-flex;
   box-sizing: border-box;
+
   & img {
     width: 3.5em;
     height: 3.5em;
