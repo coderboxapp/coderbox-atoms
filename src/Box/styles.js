@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { withColor } from 'styled-utils'
+import { withColor, withSize } from 'styled-utils'
 
 const addSpace = ({ hSpace, vSpace }) => {
   if (!hSpace && !vSpace) return
@@ -16,7 +16,7 @@ export const Box = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   border-radius: ${p => p.theme.sizes.radius};
   box-shadow: ${p => p.theme.shadows.normal};
-  padding: 1.25rem;
+  padding: ${p => p.padding};
 
   &:not(:last-child) {
     margin-bottom: 1.0rem;
@@ -24,4 +24,5 @@ export const Box = styled.div`
 
   ${addSpace}
   ${withColor}
+  ${withSize}
 `

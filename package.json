@@ -1,13 +1,12 @@
 {
   "name": "@coderbox/atoms",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "React Components used at @Coderbox",
   "main": "lib/coderbox-atoms.js",
   "scripts": {
     "prepare": "yarn build",
     "build": "webpack --env production",
-    "dev": "webpack --progress --colors --watch --env development",
-    "storybook": "start-storybook -p 6006",
+    "start": "start-storybook -p 6005",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },

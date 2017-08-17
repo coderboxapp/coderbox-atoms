@@ -1,8 +1,8 @@
 
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box } from '@coderbox/atoms'
 import { withTheme } from 'utils'
+import Box from 'Box'
 import Link from '.'
 
 storiesOf('atoms/Link', module)
