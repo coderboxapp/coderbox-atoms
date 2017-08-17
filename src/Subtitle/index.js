@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'
 
-const Subtitle = ({ as = 'h2', isInverted, ...props }) => {
+const Component = ({ as = 'h2', isInverted, ...props }) => {
   const className = cx(`subtitle`, props.className)
   const Element = s.Subtitle.withComponent(as)
 
@@ -11,7 +11,9 @@ const Subtitle = ({ as = 'h2', isInverted, ...props }) => {
   )
 }
 
-Subtitle.defaultProps = {
+Component.displayName = 'Subtitle'
+Component.defaultProps = {
+  as: 'h2'
 }
 
-export default Subtitle
+export default Component

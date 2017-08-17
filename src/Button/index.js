@@ -3,7 +3,7 @@ import cx from 'classnames'
 import * as s from './styles'
 import Loader from 'Loader'
 
-const Button = ({ href, children, isLoading, ...props }) => {
+const Component = ({ href, children, isLoading, ...props }) => {
   let className = cx('button', props.className)
   let Element = href ? s.Button.withComponent('a') : s.Button
 
@@ -15,8 +15,9 @@ const Button = ({ href, children, isLoading, ...props }) => {
   )
 }
 
-Button.defaultProps = {
+Component.displayName = 'Button'
+Component.defaultProps = {
   color: 'white'
 }
 
-export default Button
+export default Component

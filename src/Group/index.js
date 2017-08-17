@@ -2,7 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import * as s from './styles'
 
-const Group = ({ as = 'div', children, isVertical, ...props }) => {
+const Component = ({ as = 'div', children, isVertical, ...props }) => {
   let className = cx('group', props.className)
   const Element = isVertical ? s.VGroup.withComponent(as) : s.HGroup.withComponent(as)
 
@@ -13,4 +13,5 @@ const Group = ({ as = 'div', children, isVertical, ...props }) => {
   )
 }
 
-export default Group
+Component.displayName = 'Group'
+export default Component

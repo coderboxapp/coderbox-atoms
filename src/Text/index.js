@@ -1,14 +1,15 @@
 import React from 'react'
 import * as styles from './styles'
 
-const Text = ({children, ...props}) => {
+const Component = ({children, ...props}) => {
   return (
     <styles.Text {...props}>{children}</styles.Text>
   )
 }
 
-Text.defaultProps = {
+Component.displayName = 'Text'
+Component.defaultProps = {
   size: 'small'
 }
 
-export default Text
+export default Component
