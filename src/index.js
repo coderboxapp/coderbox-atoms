@@ -1,5 +1,6 @@
 import Box from 'Box'
 import Button from 'Button'
+import Dialog from 'Dialog'
 import Group from 'Group'
 import Icon from 'Icon'
 import Image from 'Image'
@@ -14,6 +15,7 @@ import theme from './theme'
 export {
   Box,
   Button,
+  Dialog,
   Group,
   Icon,
   Image,
