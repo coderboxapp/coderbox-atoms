@@ -3,6 +3,7 @@ import Button from 'Button'
 import Group from 'Group'
 import Icon from 'Icon'
 import Image from 'Image'
+import Link from 'Link'
 import Subtitle from 'Subtitle'
 import Tag from 'Tag'
 import Text from 'Text'
@@ -16,6 +17,7 @@ export {
   Group,
   Icon,
   Image,
+  Link,
   Subtitle,
   Tag,
   Text,
