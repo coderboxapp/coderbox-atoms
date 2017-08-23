@@ -10,6 +10,7 @@ export const Dialog = styled.div`
   max-width: ${p => p.maxWidth || '100%'};
   border: 1px solid white;
   text-align: center;
+  background-color: white;
 `
 
 export const Header = styled.div`
