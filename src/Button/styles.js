@@ -20,7 +20,7 @@ const isLoading = ({ isLoading }) => {
 
   return css`
     color: transparent !important;
-    user-select: none;
+    pointer-events: none;
   `
 }
 
@@ -40,6 +40,7 @@ export const Button = styled.div`
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
+  user-select: none;
 
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
