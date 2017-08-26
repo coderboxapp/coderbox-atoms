@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { bgColor } from 'styled-utils'
+import { bgColor, withSize } from 'styled-utils'
 import { darken } from 'polished'
 
 export const Link = styled.a`
@@ -14,4 +14,6 @@ export const Link = styled.a`
   &:hover {
     color: ${p => darken(0.1, bgColor(p))};
   }
+
+  ${withSize}
 `
