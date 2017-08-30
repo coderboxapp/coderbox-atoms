@@ -5,7 +5,7 @@ import { withTheme } from 'utils'
 import Box from 'Box'
 import Link from '.'
 
-storiesOf('atoms/Link', module)
+storiesOf('Link', module)
   .add('simple usage', withTheme(() => {
     return (
       <div>

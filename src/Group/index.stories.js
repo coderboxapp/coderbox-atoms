@@ -44,6 +44,11 @@ storiesOf('Group', module)
             </Button>
           </Group>
         </Box>
+        <Box>
+          <Group>
+            <Button color='success'>Primary</Button>
+          </Group>
+        </Box>
       </div>
     )
   }))

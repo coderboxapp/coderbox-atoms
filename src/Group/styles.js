@@ -8,12 +8,14 @@ export const HGroup = styled.div`
   flex-direction: row;
   & > * {
     margin: 0 -1px 0 0 !important;
+  }
+  & > *:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
-  & > *:first-child {
+  & > *:first-child:not(:last-child) {
     border-radius: ${radius} 0 0 ${radius};
   }
-  & > *:last-child {
+  & > *:last-child:not(:first-child) {
     border-radius: 0 ${radius} ${radius} 0;
     margin-right: 0 !important;
   }
@@ -25,12 +27,14 @@ export const VGroup = styled.div`
   flex-direction: column;
   & > * {
     margin: 0 0 -1px 0 !important;
+  }
+  & > *:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
-  & > *:first-child {
+  & > *:first-child:not(:last-child) {
     border-radius: ${radius} ${radius} 0 0;
   }
-  & > *:last-child {
+  & > *:last-child:not(:first-child) {
     border-radius: 0 0 ${radius} ${radius};
     margin-right: 0 !important;
   }
