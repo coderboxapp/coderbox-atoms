@@ -11,14 +11,14 @@ const Component = (props) => {
 }
 
 Component.displayName = 'Box'
+Component.defaultProps = {
+  padding: '1em',
+  color: 'white'
+}
 Component.propTypes = {
   vSpace: string,
   hSpace: string,
   padding: string
-}
-
-Component.defaultProps = {
-  padding: '1em'
 }
 
 export default Component
