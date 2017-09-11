@@ -1,24 +1,31 @@
 
 import React from 'react'
+import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
-import { Box, theme } from '@coderbox/atoms'
-import { withTheme } from '@coderbox/utils'
-import { user } from 'mockup'
-import { UserProfile, ToolbarNextPrev } from 'components'
-import { UserProfileForm } from 'forms'
 import Stack from '.'
+import Box from 'Box'
+import Title from 'Title'
+import Button from 'Button'
 
-storiesOf('components/SackView', module)
-  .add('simple usage', withTheme(theme, () => {
+const stories = storiesOf('SackView', module)
+
+stories.add('simple usage', withTheme(
+  () => {
     return (
       <div>
         <Box>
           <Stack>
-            <UserProfile profile={user} />
-            <UserProfileForm profile={user} />
+            <div>
+              <Title>Stack item 1</Title>
+              <Button>Next</Button>
+            </div>
+            <div>
+              <Title>Stack item 2</Title>
+              <Button>Prev</Button>
+            </div>
           </Stack>
-          <ToolbarNextPrev isFixed />
         </Box>
       </div>
     )
-  }))
+  }
+))
