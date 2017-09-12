@@ -12,7 +12,7 @@ const Component = (props) => {
 
 Component.displayName = 'Box'
 Component.defaultProps = {
-  padding: '1em',
+  padding: '0.6em',
   color: 'white'
 }
 Component.propTypes = {

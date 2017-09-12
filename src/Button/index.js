@@ -3,9 +3,13 @@ import cx from 'classnames'
 import * as s from './styles'
 import Loader from 'Loader'
 
-const Component = ({ href, children, isLoading, ...props }) => {
+const Component = ({ as, href, children, isLoading, ...props }) => {
   let className = cx('button', props.className)
   let Element = href ? s.Button.withComponent('a') : s.Button
+
+  if (as) {
+    Element = Element.withComponent(as)
+  }
 
   return (
     <Element {...props} isLoading={isLoading} href={href} className={className}>
