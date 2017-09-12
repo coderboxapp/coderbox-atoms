@@ -17,9 +17,10 @@ export const Box = styled.div`
   border-radius: ${p => p.theme.sizes.radius};
   box-shadow: ${p => p.theme.shadows.normal};
   padding: ${p => p.padding};
+  position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 1.0rem;
+    margin-bottom: 0.6rem;
   }
 
   ${addSpace}
