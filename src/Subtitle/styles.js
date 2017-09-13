@@ -7,6 +7,8 @@ export const Subtitle = styled.h2`
   margin: 0;
   line-height: 1.120;
   box-sizing: border-box;
+  display: block;
+  text-decoration: none;
 
   &:not(:last-child) {
     margin-bottom: 1.0rem;
