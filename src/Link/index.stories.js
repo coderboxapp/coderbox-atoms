@@ -13,6 +13,7 @@ storiesOf('Link', module)
           <Link>Default Link</Link>
           <Link color='success'>Success Link</Link>
           <Link color='danger'>Danger Link</Link>
+          <Link color='black'>Black Link</Link>
         </Box>
       </div>
     )

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import {
+  isCircular,
   withSize,
   withColor,
   withHover
@@ -61,4 +62,5 @@ export const Button = styled.div`
   ${withColor}
   ${isLoading}
   ${p => !p.isLoading && withHover(p)}
+  ${isCircular}
 `

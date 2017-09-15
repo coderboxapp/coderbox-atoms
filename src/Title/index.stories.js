@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react'
 import Box from '../Box'
 import Title from '.'
 import Subtitle from '../Subtitle'
+import Link from '../Link'
 
 storiesOf('Title + Subtitle', module)
   .add('with different sizes', withTheme(() => {
@@ -29,6 +30,18 @@ storiesOf('Title + Subtitle', module)
         <Subtitle size='small' color='primary' tone={2}>This is Subtitle primary tone 1, under title</Subtitle>
         <Title size='large' color='success'>Title Success</Title>
         <Subtitle size='small' color='danger' tone={2}>This is Subtitle success tone 1, under title</Subtitle>
+      </Box>
+    )
+  }))
+  .add('as link colors', withTheme(() => {
+    return (
+      <Box>
+        <Link>
+          <Title size='large'>Title Default</Title>
+        </Link>
+        <Link color='black'>
+          <Title size='large'>Title Black</Title>
+        </Link>
       </Box>
     )
   }))

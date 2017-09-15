@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { bgColor, withSize } from 'styled-utils'
-import { darken } from 'polished'
+import { colors, hover, withSize } from 'styled-utils'
 
 export const Link = styled.a`
   display: inline-flex;
@@ -9,10 +8,10 @@ export const Link = styled.a`
   text-decoration: none;
   cursor: pointer;
   flex-direction: ${p => p.column ? 'column' : 'row'};
-  color: ${bgColor};
+  color: ${p => colors(p).bgColor};
 
   &:hover {
-    color: ${p => darken(0.1, bgColor(p))};
+    color: ${p => hover(colors(p).bgColor)};
   }
 
   ${withSize}
