@@ -42,6 +42,7 @@ export const Button = styled.div`
   line-height: 1.5;
   position: relative;
   user-select: none;
+  text-decoration: none;
 
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
