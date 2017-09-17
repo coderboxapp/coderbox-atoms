@@ -57,7 +57,7 @@ storiesOf('Button', module)
           <Icon name='star' />
           Some text
         </Button>
-        <Button color='success' size='normal' isOutlined>
+        <Button color='success' size='small' isOutlined>
           <Icon name='star' />
           Some text
         </Button>

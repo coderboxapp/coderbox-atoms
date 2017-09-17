@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const radius = p => p.theme.sizes.radius
 
 export const HGroup = styled.div`
-  display: flex;
+  display: inline-flex;
   box-sizing: border-box;
   flex-direction: row;
   & > * {
@@ -22,7 +22,7 @@ export const HGroup = styled.div`
 `
 
 export const VGroup = styled.div`
-  display: flex;
+  display: inline-flex;
   box-sizing: border-box;
   flex-direction: column;
   & > * {

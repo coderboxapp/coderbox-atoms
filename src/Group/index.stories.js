@@ -55,7 +55,7 @@ storiesOf('Group', module)
   .add('group tags', withTheme(() => {
     return (
       <div>
-        <Box vSpace='0.5rem'>
+        <Box hSpace='0.5rem'>
           <Group>
             <Tag color='gray' tone={1}>npm</Tag>
             <Tag color='primary'>v0.5.0</Tag>
@@ -67,6 +67,10 @@ storiesOf('Group', module)
           <Group>
             <Tag color='success'>javascript</Tag>
             <Tag color='success' tone={1} isDelete />
+          </Group>
+          <Group>
+            <Tag color='success' isIcon tone={1}><Icon name='star' /></Tag>
+            <Tag color='success'>passing</Tag>
           </Group>
         </Box>
       </div>

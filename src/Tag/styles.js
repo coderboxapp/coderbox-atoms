@@ -31,6 +31,16 @@ const isDelete = ({ isDelete }) => {
   `
 }
 
+const isIcon = ({ isIcon }) => {
+  if (!isIcon) return
+  return css`
+    padding: 0px 0.3em;
+    & .icon {
+      margin: 0;
+    }
+  `
+}
+
 export const Tag = styled.div`
   position: relative;
   font-family: ${p => p.theme.fonts.primary};
@@ -48,7 +58,12 @@ export const Tag = styled.div`
     margin: 0 0.25em 0 0;
   }
 
+  & > .icon {
+    ${withSize}
+  }
+
   ${withColor}
   ${withSize}
   ${isDelete}
+  ${isIcon}
 `

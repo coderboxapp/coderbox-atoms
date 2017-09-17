@@ -50,6 +50,7 @@ export const Button = styled.div`
   
   & .icon {
     margin: 0 5px 0 0;
+    ${withSize}
   }
 
   & .loader {
