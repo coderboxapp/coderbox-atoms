@@ -4,7 +4,7 @@ const theme = {}
 theme.palettes = {
   primary: [ '#1b8ceb', '#106cb9', '#82c3ed' ],
   success: [ '#00d1b2', '#00b398', '#00edc9' ],
-  accent: ['#f4a261', '#c4834e', '#ffaa66'],
+  accent: ['#f4511e', '#d84315', '#ffccbc'],
   danger: [ '#e91e63', '#c2185b', '#f06292' ],
   gray: [ '#888888', '#2b2b2b', '#f1f1f1' ],
   white: [ '#fff', '#fff', '#fff' ],
