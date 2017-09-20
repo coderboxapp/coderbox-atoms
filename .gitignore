@@ -1,4 +1,5 @@
 node_modules/**/*
+lib/**/*
 *hot-update*
 *npm-debug*
-**/.DS_Store
+.DS_Store
