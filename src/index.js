@@ -10,6 +10,7 @@ import Subtitle from 'Subtitle'
 import Tag from 'Tag'
 import Text from 'Text'
 import Title from 'Title'
+import YesNo from 'YesNo'
 
 import theme from './theme'
 
