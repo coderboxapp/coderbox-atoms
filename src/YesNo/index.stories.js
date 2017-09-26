@@ -12,14 +12,14 @@ stories.add('default', withTheme(() => {
   return (
     <div>
       <Box>
-        <YesNo color='success' onYes={() => console.log('yess')}>
-          <Button>
+        <YesNo color='primary' isOutlined onYes={() => console.log('yess')}>
+          <Button color='primary'>
             <Icon name='check-circle' />
             Accept
           </Button>
         </YesNo>
-        <YesNo color='danger' isLeft>
-          <Button>
+        <YesNo size='small' color='danger' tone='1' isLeft>
+          <Button size='small' color='gray'>
             <Icon name='trash' />
             Delete
           </Button>
