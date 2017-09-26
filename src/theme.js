@@ -6,7 +6,8 @@ theme.palettes = {
   success: [ '#00d1b2', '#00b398', '#00edc9' ],
   accent: ['#f4511e', '#d84315', '#ffccbc'],
   danger: [ '#e91e63', '#c2185b', '#f06292' ],
-  gray: [ '#888888', '#2b2b2b', '#f1f1f1' ],
+  gray: [ '#888888', '#383838', '#f1f1f1' ],
+  light: ['#f1f1f1', '#cacaca', '#f8f8f8'],
   white: [ '#fff', '#fff', '#fff' ],
   black: [ '#000', '#000', '#000' ]
 }
