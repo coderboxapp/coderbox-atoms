@@ -26,5 +26,6 @@ export {
   Tag,
   Text,
   Title,
+  YesNo,
   theme
 }

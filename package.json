@@ -1,6 +1,6 @@
 {
   "name": "@coderbox/atoms",
-  "version": "1.0.47",
+  "version": "1.0.48",
   "description": "React Components used at @Coderbox",
   "main": "lib/coderbox-atoms.js",
   "scripts": {
