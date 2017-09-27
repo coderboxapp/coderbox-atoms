@@ -14,7 +14,7 @@ const Component = ({ as, href, children, isLoading, ...props }) => {
   return (
     <Element {...props} isLoading={isLoading} href={href} className={className}>
       {children}
-      {isLoading && <Loader color={props.color} isOutlined={props.isOutlined} isInverted />}
+      {isLoading && <Loader color={props.color} tone={props.tone} isOutlined={props.isOutlined} isInverted />}
     </Element>
   )
 }

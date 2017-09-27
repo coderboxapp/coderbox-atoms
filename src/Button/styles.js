@@ -55,8 +55,8 @@ export const Button = styled.div`
 
   & .loader {
     position: absolute;
-    left: calc(50% - (1em / 2));
-    top: calc(50% - (1.3em / 2));
+    left: calc(50% - (1.2em / 2));
+    top: calc(50% - (1.2em / 2));
   }
 
   ${isIcon}

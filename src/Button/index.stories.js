@@ -69,15 +69,30 @@ storiesOf('Button', module)
   }))
   .add('with loading', withTheme(() => {
     return (
-      <Box>
-        <Button color='primary' size='normal' isLoading>
-          <Icon name='star' />
-          Some text
-        </Button>
-        <Button color='success' size='normal' isOutlined isLoading>
-          <Icon name='star' />
-          Some text
-        </Button>
-      </Box>
+      <div>
+        <Box>
+          <Button color='primary' size='normal' isLoading>
+            <Icon name='star' />
+            Some text
+          </Button>
+          <Button color='success' size='normal' isOutlined isLoading>
+            <Icon name='star' />
+            Some text
+          </Button>
+          <Button color='gray' isLoading>
+            <Icon name='trash' />
+            Some text
+          </Button>
+        </Box>
+        <Box>
+          <Button color='gray' size='small' isLoading>
+            <Icon name='star' />
+            Some text
+          </Button>
+          <Button color='gray' tone='2' size='small' isIcon isLoading>
+            <Icon name='star' />
+          </Button>
+        </Box>
+      </div>
     )
   }))
