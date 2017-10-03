@@ -30,8 +30,8 @@ export const Loader = styled.div`
   content: "";
   display: block;
   position: relative;
-  width: 0.95em;
-  height: 0.95em;
+  width: 0.98em;
+  height: 0.98em;
 
   ${withColor}
 `
