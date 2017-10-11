@@ -5,6 +5,7 @@ import Group from 'Group'
 import Icon from 'Icon'
 import Image from 'Image'
 import Link from 'Link'
+import Loader from 'Loader'
 import Stack from 'Stack'
 import Subtitle from 'Subtitle'
 import Tag from 'Tag'
@@ -22,6 +23,7 @@ export {
   Icon,
   Image,
   Link,
+  Loader,
   Stack,
   Subtitle,
   Tag,
