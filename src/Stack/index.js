@@ -1,8 +1,10 @@
 import * as React from 'react'
 import { compact } from 'lodash'
+import cx from 'classnames'
 import { Stack, StackItem } from './styles'
 
 const Component = ({ index, children, ...props }) => {
+  const className = cx('stack', props.className)
   const items = React.Children.map(
     compact(children),
     (item, i) => (
@@ -13,7 +15,7 @@ const Component = ({ index, children, ...props }) => {
   )
 
   return (
-    <Stack>
+    <Stack {...props} className={className}>
       {items}
     </Stack>
   )
