@@ -28,7 +28,7 @@ const isLoading = ({ isLoading }) => {
 export const Button = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
-  height: ${p => p.theme.sizes.height};
+  height: 2.40em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
