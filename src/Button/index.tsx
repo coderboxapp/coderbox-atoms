@@ -1,38 +1,34 @@
 import * as React from 'react'
 import * as cx from 'classnames'
-import { Color, Size } from 'coderbox-atoms';
+import styled from 'styled'
+import { Color, Size, Tone } from 'coderbox-atoms';
 import Loader from 'Loader'
 
 interface Props {
   className?: string,
-  padding?: string,
   color?: Color,
   size?: Size,
-  as?: string,
-  href?: string,
+  tone?: Tone,
   isLoading?: boolean,
   children?: any 
 }
 
-const Component = ({ as, href, children, isLoading, ...props }: Props) => {
+const Component = ({ children, ...props }: Props) => {
   let className = cx('button', props.className)
-  let Element = href ? s.Button.withComponent('a') : s.Button
-
-  if (as) {
-    Element = Element.withComponent(as)
-  }
 
   return (
-    <Element {...props} isLoading={isLoading} href={href} className={className}>
+    <div {...props} className={className}>
       {children}
-      {isLoading && <Loader color={props.color} tone={props.tone} isOutlined={props.isOutlined} isInverted />}
-    </Element>
+      {props.isLoading && <Loader color={props.color} tone={props.tone} />}
+    </div>
   )
 }
 
-Component.displayName = 'Button'
-Component.defaultProps = {
-  color: 'white'
+const StyledComponent = styled(Component)`
+`
+
+StyledComponent.displayName = 'Button'
+StyledComponent.defaultProps = {
 }
 
-export default Component
+export default StyledComponent

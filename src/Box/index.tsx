@@ -5,11 +5,9 @@ import { withColor, withSize } from 'styled-utils'
 import { Size, Color } from 'coderbox-atoms'
 import { withSpace } from 'utils'
 
-interface Props {
+interface Props extends Color, Size {
   className?: string,
   padding?: string,
-  color?: Color,
-  size?: Size,
   hSpace?: string,
   vSpace?: string,
   children?: any 
@@ -40,9 +38,7 @@ const StyledComponent = styled(Component)`
 
 StyledComponent.displayName = 'Box'
 StyledComponent.defaultProps = {
-  padding: '0.6em',
-  color: 'white',
-  size: 'normal'
+  padding: '0.6em'
 }
 
 export default StyledComponent

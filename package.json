@@ -51,12 +51,13 @@
   },
   "dependencies": {
     "@types/classnames": "^2.2.3",
+    "@types/recompose": "^0.24.3",
     "@types/storybook__react": "^3.0.5",
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
-    "recompose": "^0.25.0",
+    "recompose": "^0.26.0",
     "styled-components": "^2.1.2",
     "styled-utils": "^1.2.4"
   }

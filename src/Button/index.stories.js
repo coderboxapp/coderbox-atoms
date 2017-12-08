@@ -20,7 +20,7 @@ storiesOf('Button', module)
             <Button color='black'>Black</Button>
           </Box>
           <Box color='success'>
-            <Button as='div' isInverted>Normal</Button>
+            <Button isInverted>Normal</Button>
             <Button color='primary' isInverted>Primary</Button>
             <Button color='success' isInverted>Success</Button>
             <Button color='danger' isInverted>Danger</Button>

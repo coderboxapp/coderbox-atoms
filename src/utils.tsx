@@ -45,10 +45,23 @@ export interface IsLoadingProps{
   isLoading?: boolean
 }
 
-const isLoading = ({ isLoading }: IsLoadingProps) => {
+export const isLoading = ({ isLoading }: IsLoadingProps) => {
   if (!isLoading) return
   return css`
     color: transparent !important;
     pointer-events: none;
   `
+}
+
+export const getHTMLProps = (props: any) => {
+  const {
+    color,
+    size,
+    isInverted,
+    isOutlined,
+    isCircular,
+    ...rest
+  } = props
+
+  return rest
 }

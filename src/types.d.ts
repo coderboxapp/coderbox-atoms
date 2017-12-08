@@ -4,9 +4,18 @@ declare module 'styled-utils' {
 }
 
 declare module 'coderbox-atoms' {
-  export type Size = 'tiny' | 'small' | 'normal' | 'large' | 'xlarge' | 'huge'
-  export type Color = 'primary' | 'secondary' | 'success' | 'danger' | 'gray' | 'light' | 'white' | 'black'
+  export type Sizes = 'tiny' | 'small' | 'normal' | 'large' | 'xlarge' | 'huge'
+  export interface Size {
+    size?: Sizes
+  }
+
+  export type Colors = 'primary' | 'secondary' | 'success' | 'danger' | 'gray' | 'light' | 'white' | 'black'
+  export interface Color {
+    color?: Colors
+  }
+
   export type Palette = Array<string>
+  export type Tone = 0 | 1 | 2
   export interface IPalettes {
     primary: Palette
     secondary: Palette
