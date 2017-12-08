@@ -10,13 +10,27 @@ declare module 'coderbox-atoms' {
   }
 
   export type Colors = 'primary' | 'secondary' | 'success' | 'danger' | 'gray' | 'light' | 'white' | 'black'
+  export type Tones = 0 | 1 | 2
   export interface Color {
     color?: Colors
+    tone?: Tones
+    isInverted?: boolean
+    isOutlined?: boolean
+  }
+
+  export interface Helpers {
+    isCircular?: boolean
+    hasBorder?: boolean
+  }
+
+  export interface Modifiers extends
+    Color,
+    Size,
+    Helpers {
   }
 
   export type Palette = Array<string>
-  export type Tone = 0 | 1 | 2
-  export interface IPalettes {
+  export interface Palettes {
     primary: Palette
     secondary: Palette
     success: Palette
@@ -27,7 +41,7 @@ declare module 'coderbox-atoms' {
     black: Palette
   }
   export interface ITheme {
-    palettes: IPalettes,
+    palettes: Palettes,
     fonts: {
       primary: string
     },

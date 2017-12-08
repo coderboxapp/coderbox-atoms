@@ -1,12 +1,10 @@
 import * as React from 'react'
 import * as cx from 'classnames'
-import { Color, Tone } from 'coderbox-atoms'
+import { Color } from 'coderbox-atoms'
 import styled, { keyframes } from 'styled'
 
-interface Props {
-  className?: string,
-  color?: Color
-  tone?: Tone
+interface Props extends Color {
+  className?: string
 }
 
 const Component = (props: Props) => {

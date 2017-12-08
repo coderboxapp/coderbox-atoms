@@ -7,7 +7,7 @@ import Loader from '.'
 storiesOf('Loader', module).add('default', withTheme(() => {
   return (
     <div>
-      <Box color='primary' vSpace='0.8rem'>
+      <Box size='normal' color='primary' vSpace='0.8rem'>
         <Loader />
         <Loader color='danger' />
         <Loader color='success' />

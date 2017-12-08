@@ -1,14 +1,11 @@
 import * as React from 'react'
 import * as cx from 'classnames'
 import styled from 'styled'
-import { Color, Size, Tone } from 'coderbox-atoms';
+import { Modifiers } from 'coderbox-atoms';
 import Loader from 'Loader'
 
-interface Props {
+interface Props extends Modifiers {
   className?: string,
-  color?: Color,
-  size?: Size,
-  tone?: Tone,
   isLoading?: boolean,
   children?: any 
 }

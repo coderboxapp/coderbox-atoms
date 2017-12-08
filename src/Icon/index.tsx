@@ -1,18 +1,14 @@
 import * as React from 'react'
 import * as cx from 'classnames'
 import styled from 'styled'
-import { Color, Size, Tone } from 'coderbox-atoms'
+import { Modifiers } from 'coderbox-atoms'
 import { withColor, withSize } from 'styled-utils'
 import { mapProps } from 'recompose'
 import { getHTMLProps } from 'utils'
 
-interface Props extends Color, Size {
+interface Props extends Modifiers {
   name: string,
-  className?: string,
-  tone?: Tone,
-  isInverted?: boolean
-  isCircular?: boolean
-  hasBorder?: boolean
+  className?: string
 }
 
 const Component = ({ name, ...props }: Props) => {

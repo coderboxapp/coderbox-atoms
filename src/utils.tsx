@@ -60,6 +60,7 @@ export const getHTMLProps = (props: any) => {
     isInverted,
     isOutlined,
     isCircular,
+    hasBorder,
     ...rest
   } = props
 

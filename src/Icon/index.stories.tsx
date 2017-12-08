@@ -32,7 +32,7 @@ storiesOf('Icon', module)
   }))
   .add('with different size', withTheme(() => {
     return (
-      <Box>
+      <Box size='normal'>
         <Icon name='star' color='black' isInverted size='small' />
         <Icon name='star' color='gray' isInverted />
         <Icon name='github' color='primary'isInverted size='large' />

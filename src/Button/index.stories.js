@@ -2,7 +2,7 @@ import * as React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Box from 'Box'
-// import Icon from 'Icon'
+import Icon from 'Icon'
 import Button from '.'
 
 storiesOf('Button', module)

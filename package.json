@@ -44,6 +44,7 @@
     "babel-preset-react": "^6.24.1",
     "flow-bin": "^0.54.1",
     "standard": "^10.0.3",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.2",
     "webpack": "^3.5.4",
     "webpack-node-externals": "^1.6.0",

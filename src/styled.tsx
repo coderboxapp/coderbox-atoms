@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as styledComponents from 'styled-components';
-import { ThemedStyledComponentsModule, StyledFunction } from 'styled-components';
+import { ThemedStyledComponentsModule } from 'styled-components';
 import { ITheme } from 'coderbox-atoms';
 
 const {
@@ -11,5 +11,10 @@ const {
   ThemeProvider
 } = styledComponents as ThemedStyledComponentsModule<ITheme>
 
-export { css, injectGlobal, keyframes, ThemeProvider, StyledFunction }
+type StyledFunction<T> = styledComponents.ThemedStyledFunction<T, ITheme>
+function withProps<P>(fn: StyledFunction<React.HTMLProps<HTMLElement>>): StyledFunction<P> {
+  return fn as StyledFunction<P>
+}
+
+export { css, injectGlobal, keyframes, ThemeProvider, withProps }
 export default styled
