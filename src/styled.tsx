@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as styledComponents from 'styled-components';
 import { ThemedStyledComponentsModule, StyledFunction } from 'styled-components';
-import { ITheme } from './theme';
+import { ITheme } from 'coderbox-atoms';
 
 const {
   default: styled,

@@ -1,9 +1,20 @@
-import React from 'react'
-import cx from 'classnames'
-import * as s from './styles'
+import * as React from 'react'
+import * as cx from 'classnames'
+import { Color, Size } from 'coderbox-atoms';
 import Loader from 'Loader'
 
-const Component = ({ as, href, children, isLoading, ...props }) => {
+interface Props {
+  className?: string,
+  padding?: string,
+  color?: Color,
+  size?: Size,
+  as?: string,
+  href?: string,
+  isLoading?: boolean,
+  children?: any 
+}
+
+const Component = ({ as, href, children, isLoading, ...props }: Props) => {
   let className = cx('button', props.className)
   let Element = href ? s.Button.withComponent('a') : s.Button
 

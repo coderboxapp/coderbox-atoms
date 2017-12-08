@@ -1,6 +1,6 @@
-import React from 'react'
-import { withTheme } from 'utils'
+import * as React from 'react'
 import { storiesOf } from '@storybook/react'
+import { withTheme } from 'utils'
 import Box from 'Box'
 import Loader from '.'
 

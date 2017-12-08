@@ -1,8 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Box from 'Box'
-import Icon from 'Icon'
+// import Icon from 'Icon'
 import Button from '.'
 
 storiesOf('Button', module)
@@ -50,23 +50,23 @@ storiesOf('Button', module)
       </Box>
     )
   }))
-  .add('with icon', withTheme(() => {
-    return (
-      <Box>
-        <Button color='primary' size='normal'>
-          <Icon name='star' />
-          Some text
-        </Button>
-        <Button color='success' size='small' isOutlined>
-          <Icon name='star' />
-          Some text
-        </Button>
-        <Button color='gray' tone={2} size='normal' isIcon>
-          <Icon name='stack-overflow' />
-        </Button>
-      </Box>
-    )
-  }))
+  // .add('with icon', withTheme(() => {
+  //   return (
+  //     <Box>
+  //       <Button color='primary' size='normal'>
+  //         <Icon name='star' />
+  //         Some text
+  //       </Button>
+  //       <Button color='success' size='small' isOutlined>
+  //         <Icon name='star' />
+  //         Some text
+  //       </Button>
+  //       <Button color='gray' tone={2} size='normal' isIcon>
+  //         <Icon name='stack-overflow' />
+  //       </Button>
+  //     </Box>
+  //   )
+  // }))
   .add('with loading', withTheme(() => {
     return (
       <div>
