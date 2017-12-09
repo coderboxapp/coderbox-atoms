@@ -5,7 +5,7 @@ export interface ButtonProps extends
   Size,
   State,
   Helpers {
-  className?: string,
-  isIcon?: boolean,
+  className?: string
+  isIcon?: boolean
   children?: any 
 }

@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@types/classnames": "^2.2.3",
+    "@types/lodash": "^4.14.88",
     "@types/recompose": "^0.24.3",
     "@types/storybook__react": "^3.0.5",
     "classnames": "^2.2.5",
