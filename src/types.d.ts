@@ -10,6 +10,7 @@ declare module 'styled-utils' {
 }
 
 declare module 'styled-utils/color'
+declare module '@coderbox/hocs'
 
 declare module 'coderbox-atoms' {
   export type Sizes = 'tiny' | 'small' | 'normal' | 'large' | 'xlarge' | 'huge'

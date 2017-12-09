@@ -8,4 +8,5 @@ export interface ButtonProps extends
   className?: string
   isIcon?: boolean
   children?: any 
+  onClick?: Function
 }

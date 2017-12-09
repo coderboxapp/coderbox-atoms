@@ -33,6 +33,7 @@
   "author": "Ghiura Alexandru <ghalex@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@coderbox/hocs": "^1.0.9",
     "@storybook/react": "^3.2.4",
     "@storybook/storybook-deployer": "^2.0.0",
     "awesome-typescript-loader": "^3.4.1",

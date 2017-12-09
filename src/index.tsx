@@ -6,9 +6,9 @@ import Icon from 'Icon'
 // import Image from 'Image'
 // import Link from 'Link'
 import Loader from 'Loader'
-// import Stack from 'Stack'
+import Stack from 'Stack'
 import Subtitle from 'Subtitle'
-// import Tag from 'Tag'
+import Tag from 'Tag'
 import Text from 'Text'
 import Title from 'Title'
 // import YesNo from 'YesNo'
@@ -24,9 +24,9 @@ export {
   // Image,
   Loader,
   // Link,
-  // Stack,
+  Stack,
   Subtitle,
-  // Tag,
+  Tag,
   Text,
   Title,
   // YesNo,
