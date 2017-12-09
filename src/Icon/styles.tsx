@@ -1,5 +1,5 @@
 import styled from 'styled'
-import { withColor, withSize } from 'styled-utils'
+import { withColor, withSize, isMarginless, isPaddingless, isCircular  } from 'styled-utils'
 
 export const StyledComponent = styled.i`
   display: inline-flex;
@@ -12,4 +12,7 @@ export const StyledComponent = styled.i`
 
   ${withColor}
   ${withSize}
+  ${isMarginless}
+  ${isPaddingless}
+  ${isCircular}
 `

@@ -1,31 +1,22 @@
 import * as React from 'react'
 import * as cx from 'classnames'
-import styled from 'styled'
-import { Modifiers } from 'coderbox-atoms';
 import Loader from 'Loader'
+import { ButtonProps } from './types'
+import { StyledComponent } from './styles';
 
-interface Props extends Modifiers {
-  className?: string,
-  isLoading?: boolean,
-  children?: any 
-}
-
-const Component = ({ children, ...props }: Props) => {
+const Component: React.SFC<ButtonProps> = ({ children, ...props }) => {
   let className = cx('button', props.className)
 
   return (
-    <div {...props} className={className}>
+    <StyledComponent {...props} className={className}>
       {children}
-      {props.isLoading && <Loader color={props.color} tone={props.tone} />}
-    </div>
+      {props.isLoading && <div className='loader-container'><Loader size={props.size} color={props.color} tone={props.tone} isInverted={!props.isOutlined} /></div>}
+    </StyledComponent>
   )
 }
 
-const StyledComponent = styled(Component)`
-`
-
-StyledComponent.displayName = 'Button'
-StyledComponent.defaultProps = {
+Component.displayName = 'Button'
+Component.defaultProps = {
 }
 
-export default StyledComponent
+export default Component

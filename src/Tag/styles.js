@@ -45,7 +45,7 @@ export const Tag = styled.div`
   position: relative;
   font-family: ${p => p.theme.fonts.primary};
   font-weight: normal;
-  border-radius: ${p => p.theme.sizes.radius};
+  border-radius: 3px;
   padding: 0 0.75rem;
   display: inline-flex;
   justify-content: center;

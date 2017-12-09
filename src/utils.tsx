@@ -14,7 +14,6 @@ export interface WithSpaceProps {
 
 export const withSpace = ({ space }: WithSpaceProps): any => {
   if (!space) return
-
   return css`
     > *:not(:last-child) {
       margin-right: ${space} !important;
@@ -27,7 +26,7 @@ export interface IsIconProps {
   isIcon?: boolean
 }
 
-const isIcon = ({ isIcon }: IsIconProps) => {
+export const isIcon = ({ isIcon }: IsIconProps): any => {
   if (!isIcon) return
   return css`
     padding: 0px 0.5em;
@@ -41,7 +40,7 @@ export interface IsLoadingProps{
   isLoading?: boolean
 }
 
-export const isLoading = ({ isLoading }: IsLoadingProps) => {
+export const isLoading = ({ isLoading }: IsLoadingProps): any => {
   if (!isLoading) return
   return css`
     color: transparent !important;
@@ -56,7 +55,9 @@ export const getHTMLProps = (props: any) => {
     isInverted,
     isOutlined,
     isCircular,
-    hasBorder,
+    isMarginless,
+    isPaddingless,
+    isHidden,
     ...rest
   } = props
 

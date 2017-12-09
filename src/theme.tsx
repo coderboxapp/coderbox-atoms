@@ -16,9 +16,13 @@ const theme: Theme = {
       'BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif'
   },
   sizes: {
-    maxWidth: '960px',
-    font: { tiny: '0.60rem', small: '0.785rem', normal: '1rem', large: '1.5rem', xlarge: '2.0rem', huge: '3rem' },
-    radius: '3px'
+    tiny: '0.60rem',
+    small: '0.785rem',
+    normal: '1rem',
+    medium: '1.2em',
+    large: '1.5rem',
+    xlarge: '2.0rem',
+    huge: '3rem'
   },
   components: {
     box: {
@@ -26,8 +30,15 @@ const theme: Theme = {
       radius: '3px'
     },
     loader: {
-      size: '1em',
-      border: '2px solid'
+      size: '1.30em',
+      border: '2px solid',
+      margin: '0'
+    },
+    icon: {},
+    button: {
+      height: '2.40em',
+      padding: '0px 1.0em',
+      radius: '3px'
     }
   }
 }

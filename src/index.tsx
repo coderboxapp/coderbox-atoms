@@ -1,11 +1,11 @@
 import Box from 'Box'
-// import Button from 'Button'
+import Button from 'Button'
 // import Dialog from 'Dialog'
 // import Group from 'Group'
-// import Icon from 'Icon'
+import Icon from 'Icon'
 // import Image from 'Image'
 // import Link from 'Link'
-// import Loader from 'Loader'
+import Loader from 'Loader'
 // import Stack from 'Stack'
 // import Subtitle from 'Subtitle'
 // import Tag from 'Tag'
@@ -17,13 +17,13 @@ import theme from './theme'
 
 export {
   Box,
-  // Button,
+  Button,
   // Dialog,
   // Group,
-  // Icon,
+  Icon,
   // Image,
+  Loader,
   // Link,
-  // Loader,
   // Stack,
   // Subtitle,
   // Tag,

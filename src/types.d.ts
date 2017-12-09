@@ -1,6 +1,11 @@
 declare module 'styled-utils' {
-  export function withColor(): string
-  export function withSize(): string
+  export function withColor(p: object): string
+  export function withSize(p: object): string
+  export function withHover(p: object): string
+  export function isMarginless(p: object): string
+  export function isPaddingless(p: object): string
+  export function isCircular(p: object): string
+  export function isHidden(p: object): string
 }
 
 declare module 'coderbox-atoms' {
@@ -18,15 +23,16 @@ declare module 'coderbox-atoms' {
     isOutlined?: boolean
   }
 
-  export interface Helpers {
-    isCircular?: boolean
-    hasBorder?: boolean
+  export interface State {
+    isLoading?: boolean
+    isDisabled?: boolean
   }
 
-  export interface Modifiers extends
-    Color,
-    Size,
-    Helpers {
+  export interface Helpers {
+    isMarginless?: boolean
+    isPaddingless?: boolean
+    isCircular?: boolean
+    isHidden?: boolean
   }
 
   export type Palette = Array<string>
@@ -41,14 +47,18 @@ declare module 'coderbox-atoms' {
     black: Palette
   }
   export interface Theme {
-    palettes: Palettes,
+    palettes: Palettes
     fonts: {
       primary: string
     },
     sizes: {
-      maxWidth: string
-      font: any,
-      radius: string
+      tiny: string
+      small: string
+      normal: string
+      medium: string
+      large: string
+      xlarge: string
+      huge: string
     }
     components: any
   }

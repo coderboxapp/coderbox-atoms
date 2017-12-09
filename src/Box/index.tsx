@@ -12,8 +12,7 @@ const Component: React.SFC<BoxProps> = (props) => {
 
 Component.displayName = 'Box'
 Component.defaultProps = {
-  padding: '0.6em',
-  size: 'normal'
+  padding: '0.6em'
 }
 
 export default Component

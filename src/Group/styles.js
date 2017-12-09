@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const radius = p => p.theme.sizes.radius
+const radius = p => '3px'
 
 export const HGroup = styled.div`
   display: inline-flex;
