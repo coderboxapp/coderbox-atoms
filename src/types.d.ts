@@ -1,12 +1,15 @@
 declare module 'styled-utils' {
   export function withColor(p: object): string
   export function withSize(p: object): string
+  export function withDisplay(p: object): string
   export function withHover(p: object): string
   export function isMarginless(p: object): string
   export function isPaddingless(p: object): string
   export function isCircular(p: object): string
   export function isHidden(p: object): string
 }
+
+declare module 'styled-utils/color'
 
 declare module 'coderbox-atoms' {
   export type Sizes = 'tiny' | 'small' | 'normal' | 'large' | 'xlarge' | 'huge'

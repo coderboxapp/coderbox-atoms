@@ -7,10 +7,10 @@ import Icon from 'Icon'
 // import Link from 'Link'
 import Loader from 'Loader'
 // import Stack from 'Stack'
-// import Subtitle from 'Subtitle'
+import Subtitle from 'Subtitle'
 // import Tag from 'Tag'
-// import Text from 'Text'
-// import Title from 'Title'
+import Text from 'Text'
+import Title from 'Title'
 // import YesNo from 'YesNo'
 
 import theme from './theme'
@@ -25,10 +25,10 @@ export {
   Loader,
   // Link,
   // Stack,
-  // Subtitle,
+  Subtitle,
   // Tag,
-  // Text,
-  // Title,
+  Text,
+  Title,
   // YesNo,
   theme
 }
