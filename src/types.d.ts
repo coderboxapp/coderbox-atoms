@@ -40,7 +40,7 @@ declare module 'coderbox-atoms' {
     white: Palette
     black: Palette
   }
-  export interface ITheme {
+  export interface Theme {
     palettes: Palettes,
     fonts: {
       primary: string

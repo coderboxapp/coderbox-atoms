@@ -8,7 +8,7 @@ storiesOf('Icon', module)
   .add('simple usage', withTheme(() => {
     return (
       <div>
-        <Box hSpace='0.5em'>
+        <Box space='0.5em'>
           <Icon name='star' color='black' />
           <Icon name='star' color='gray' />
           <Icon name='github' color='primary' />

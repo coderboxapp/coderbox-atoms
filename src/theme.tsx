@@ -1,6 +1,6 @@
-import { ITheme } from 'coderbox-atoms'
+import { Theme } from 'coderbox-atoms'
 
-const theme: ITheme = {
+const theme: Theme = {
   palettes: {
     primary: [ '#1b8ceb', '#106cb9', '#82c3ed' ],
     secondary: ['#f4511e', '#d84315', '#ffccbc'],
@@ -24,6 +24,10 @@ const theme: ITheme = {
     box: {
       boxShadow: '0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)',
       radius: '3px'
+    },
+    loader: {
+      size: '1em',
+      border: '2px solid'
     }
   }
 }

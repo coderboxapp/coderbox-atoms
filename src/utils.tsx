@@ -9,20 +9,16 @@ export const withTheme = (Component: React.SFC) => {
 }
 
 export interface WithSpaceProps {
-  hSpace?: string
-  vSpace?: string
+  space?: string
 }
 
-export const withSpace = ({ hSpace, vSpace }: WithSpaceProps): any => {
-  if (!hSpace && !vSpace) return
-
-  const marginLeft = hSpace ? `margin-right: ${hSpace} !important;` : ''
-  const marginRight = vSpace ? `margin-bottom: ${vSpace} !important;` : ''
+export const withSpace = ({ space }: WithSpaceProps): any => {
+  if (!space) return
 
   return css`
     > *:not(:last-child) {
-      ${marginLeft}
-      ${marginRight}
+      margin-right: ${space} !important;
+      margin-bottom: ${space} !important;
     }
   `
 }

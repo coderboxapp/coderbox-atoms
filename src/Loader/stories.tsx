@@ -4,12 +4,14 @@ import { withTheme } from 'utils'
 import Box from 'Box'
 import Loader from '.'
 
-storiesOf('Loader', module).add('default', withTheme(() => {
+const stories = storiesOf('Loader', module)
+
+stories.add('default', withTheme(() => {
   return (
     <div>
-      <Box size='normal' color='primary' vSpace='0.8rem'>
+      <Box size='normal' space='0.8rem'>
         <Loader />
-        <Loader color='danger' />
+        <Loader color='danger' size='large' />
         <Loader color='success' />
       </Box>
     </div>

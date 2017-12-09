@@ -1,45 +1,24 @@
 import * as React from 'react'
 import * as cx from 'classnames'
-import styled from 'styled'
-import { Modifiers } from 'coderbox-atoms'
-import { withColor, withSize } from 'styled-utils'
 import { mapProps } from 'recompose'
-import { getHTMLProps } from 'utils'
+import { IconProps } from './types';
+import { StyledComponent } from './styles';
 
-interface Props extends Modifiers {
-  name: string,
-  className?: string
-}
-
-const Component = ({ name, ...props }: Props) => {
+const Component: React.SFC<IconProps> = ({ name, ...props }) => {
   const className = cx(`icon fa fa-${name}`, props.className)
-  const rest = getHTMLProps(props)
 
   return (
-    <i {...rest} className={className} />
+    <StyledComponent {...props} className={className} />
   )
 }
 
-const StyledComponent = styled(Component)`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 1.6em;
-  height: 1.6em;
-  line-height: 1.5;
-
-  ${withColor}
-  ${withSize}
-`
-
-StyledComponent.displayName = 'Icon'
-StyledComponent.defaultProps = {
+Component.displayName = 'Icon'
+Component.defaultProps = {
 }
 
-export default mapProps<Props, Props>(props => {
+export default mapProps<IconProps, IconProps>(props => {
   return {
     ...props,
     isInverted: !props.isInverted
   }
-})(StyledComponent)
+})(Component)
