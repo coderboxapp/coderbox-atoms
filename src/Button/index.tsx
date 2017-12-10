@@ -1,10 +1,10 @@
 import * as React from 'react'
 import * as cx from 'classnames'
 import Loader from 'Loader'
-import { ButtonProps } from './types'
+import { TButton } from './types'
 import { StyledComponent } from './styles';
 
-const Component: React.SFC<ButtonProps> = ({ children, ...props }) => {
+const Component: React.SFC<TButton> = ({ children, ...props }) => {
   let className = cx('button', props.className)
 
   return (

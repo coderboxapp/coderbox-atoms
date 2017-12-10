@@ -30,6 +30,7 @@ declare module 'coderbox-atoms' {
   export interface State {
     isLoading?: boolean
     isDisabled?: boolean
+    isStatic?: boolean
   }
 
   export interface Helpers {

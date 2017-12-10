@@ -42,6 +42,9 @@ const theme: Theme = {
     },
     link: {
       textDecoration: 'none'
+    },
+    group: {
+      radius: '3px'
     }
   }
 }

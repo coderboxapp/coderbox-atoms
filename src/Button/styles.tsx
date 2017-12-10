@@ -1,9 +1,9 @@
 import styledComponent, { withProps } from 'styled'
 import { withSize, withColor, withHover, isMarginless, isPaddingless, isCircular } from 'styled-utils'
 import { isIcon, isLoading } from 'utils'
-import { ButtonProps } from './types';
+import { TButton } from './types';
 
-const styled = withProps<ButtonProps>(styledComponent.div)
+const styled = withProps<TButton>(styledComponent.div)
 export const StyledComponent = styled`
   font-family: ${p => p.theme.fonts.primary};
   height: ${p => p.theme.components.button.height};

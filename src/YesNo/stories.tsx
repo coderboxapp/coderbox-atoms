@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Box from 'Box'
@@ -18,7 +18,7 @@ stories.add('default', withTheme(() => {
             Accept
           </Button>
         </YesNo>
-        <YesNo size='small' color='danger' tone='1' isLeft>
+        <YesNo size='small' color='danger' tone={1} isLeft>
           <Button size='small' color='gray'>
             <Icon name='trash' />
             Delete

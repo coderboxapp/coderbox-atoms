@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { withTheme } from 'utils'
 import { storiesOf } from '@storybook/react'
 import Button from 'Button'
@@ -7,8 +7,10 @@ import Box from 'Box'
 import Icon from 'Icon'
 import Group from '.'
 
-storiesOf('Group', module)
-  .add('group buttons', withTheme(() => {
+const stories = storiesOf('Group', module)
+
+stories.add('group buttons',
+  withTheme(() => {
     return (
       <div>
         <Box>
@@ -51,11 +53,14 @@ storiesOf('Group', module)
         </Box>
       </div>
     )
-  }))
-  .add('group tags', withTheme(() => {
+  })
+)
+
+stories.add('group tags',
+  withTheme(() => {
     return (
       <div>
-        <Box hSpace='0.5rem'>
+        <Box space='0.5rem'>
           <Group>
             <Tag color='gray' tone={1}>npm</Tag>
             <Tag color='primary'>v0.5.0</Tag>
@@ -75,4 +80,5 @@ storiesOf('Group', module)
         </Box>
       </div>
     )
-  }))
+  })
+)
