@@ -10,8 +10,8 @@ storiesOf('Icon', module)
       <div>
         <Box space='0.5em'>
           <Icon name='star' color='black' />
-          <Icon name='star' color='gray' />
-          <Icon name='github' color='primary' />
+          <Icon name='star' type='s' color='gray' />
+          <Icon name='github-square' type='b' color='primary' />
           <Icon name='gift' color='success' />
           <Icon name='bug' color='danger' hasBorder />
         </Box>

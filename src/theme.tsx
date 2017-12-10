@@ -39,6 +39,9 @@ const theme: Theme = {
       height: '2.40em',
       padding: '0px 1.0em',
       radius: '3px'
+    },
+    link: {
+      textDecoration: 'none'
     }
   }
 }

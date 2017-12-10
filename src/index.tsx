@@ -4,7 +4,7 @@ import Button from 'Button'
 // import Group from 'Group'
 import Icon from 'Icon'
 // import Image from 'Image'
-// import Link from 'Link'
+import Link from 'Link'
 import Loader from 'Loader'
 import Stack from 'Stack'
 import Subtitle from 'Subtitle'
@@ -23,7 +23,7 @@ export {
   Icon,
   // Image,
   Loader,
-  // Link,
+  Link,
   Stack,
   Subtitle,
   Tag,
