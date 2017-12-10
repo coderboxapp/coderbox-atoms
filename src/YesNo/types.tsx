@@ -1,6 +1,6 @@
 import { Color, Size } from 'coderbox-atoms'
 
-export interface TYesNo extends Color, Size {
+export interface YesNoProps extends Color, Size {
   className?: string
   isLeft?: boolean
   isOpen?: boolean
@@ -8,8 +8,13 @@ export interface TYesNo extends Color, Size {
   onNo?: () => void
 }
 
-export interface TYesNoMapped extends TYesNo {
+export interface YesNoMappedProps extends YesNoProps {
   setIsOpen: (value: boolean) => void
   onYes: () => void
   onNo: () => void
+}
+
+export interface IsOpenState {
+  isOpen: boolean
+  setIsOpen: (open: boolean) => void
 }

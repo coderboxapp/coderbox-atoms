@@ -5,9 +5,9 @@ import Group from 'Group'
 import Button from 'Button'
 import Icon from 'Icon'
 import { YesNo } from './styles'
-import { TYesNo, TYesNoMapped } from './types';
+import { YesNoProps, YesNoMappedProps, IsOpenState } from './types';
 
-const Component: React.SFC<TYesNoMapped> = ({ children, isLeft, isOpen, setIsOpen, onYes, onNo, ...props }) => {
+const Component: React.SFC<YesNoMappedProps> = ({ children, isLeft, isOpen, setIsOpen, onYes, onNo, ...props }) => {
   const className = cx(`yesno`, props.className)
   const MainButton = React.cloneElement(React.Children.only(children), {
     onClick: () => setIsOpen(!isOpen)
@@ -28,9 +28,9 @@ const Component: React.SFC<TYesNoMapped> = ({ children, isLeft, isOpen, setIsOpe
 Component.displayName = 'YesNo'
 Component.defaultProps = {}
 
-export default compose<TYesNoMapped, TYesNo>(
+export default compose<YesNoMappedProps, YesNoProps>(
   withState('isOpen', 'setIsOpen', false),
-  mapProps<TYesNoMapped, TYesNoMapped>(props => {
+  mapProps<YesNoMappedProps, YesNoMappedProps>(props => {
     return {
       ...props,
       onYes: () => {
