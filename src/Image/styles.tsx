@@ -7,7 +7,7 @@ interface Props {
   height?: string
 }
 
-export const Image = styled.div`
+export const StyledImage = styled.div`
   overflow: hidden;
   display: inline-flex;
   box-sizing: border-box;

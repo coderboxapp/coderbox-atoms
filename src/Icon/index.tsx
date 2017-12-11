@@ -2,18 +2,18 @@ import * as React from 'react'
 import * as cx from 'classnames'
 import { mapProps } from 'recompose'
 import { IconProps } from './types';
-import { StyledComponent } from './styles';
+import { StyledIcon } from './styles';
 
-const Component: React.SFC<IconProps> = ({ name, type, ...props }) => {
+const Icon: React.SFC<IconProps> = ({ name, type, ...props }) => {
   const className = cx(`icon fa fa-${name}`, props.className)
 
   return (
-    <StyledComponent {...props} className={className} />
+    <StyledIcon {...props} className={className} />
   )
 }
 
-Component.displayName = 'Icon'
-Component.defaultProps = {
+Icon.displayName = 'Icon'
+Icon.defaultProps = {
   type: 'r'
 }
 
@@ -22,4 +22,4 @@ export default mapProps<IconProps, IconProps>(props => {
     ...props,
     isInverted: !props.isInverted
   }
-})(Component)
+})(Icon)

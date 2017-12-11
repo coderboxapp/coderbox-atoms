@@ -1,18 +1,18 @@
 import * as React from 'react'
 import * as cx from 'classnames'
 import { BoxProps } from './types'
-import { StyledComponent } from './styles'
+import { StyledBox } from './styles'
 
-const Component: React.SFC<BoxProps> = (props) => {
+const Box: React.SFC<BoxProps> = (props) => {
   const className = cx(`box`, props.className)
   return (
-    <StyledComponent {...props} />
+    <StyledBox {...props} />
   )
 }
 
-Component.displayName = 'Box'
-Component.defaultProps = {
+Box.displayName = 'Box'
+Box.defaultProps = {
   padding: '0.6em'
 }
 
-export default Component
+export default Box

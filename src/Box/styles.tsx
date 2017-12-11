@@ -5,7 +5,7 @@ import { BoxProps } from './types'
 
 const styled = withProps<BoxProps>(styledComponent.div)
 
-export const StyledComponent = styled`
+export const StyledBox = styled`
   font-family: ${p => p.theme.fonts.primary};
   border-radius: ${p => p.theme.components.box.radius};
   box-shadow: ${p => p.theme.components.box.boxShadow};

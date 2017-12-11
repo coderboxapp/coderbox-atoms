@@ -1,7 +1,7 @@
 import styled from 'styled'
 import { withColor, withSize, isMarginless, isPaddingless, isCircular  } from 'styled-utils'
 
-export const StyledComponent = styled.i`
+export const StyledIcon = styled.i`
   display: inline-flex;
   justify-content: center;
   align-items: center;

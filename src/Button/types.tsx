@@ -1,6 +1,6 @@
 import { Color, Size, Helpers, State } from 'coderbox-atoms'
 
-export interface TButton extends
+export interface ButtonProps extends
   Color,
   Size,
   State,

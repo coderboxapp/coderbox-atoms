@@ -4,9 +4,9 @@ import { compact } from 'lodash'
 import { GroupProps } from './types'
 import { HGroup, VGroup } from './styles'
 
-const Component: React.SFC<GroupProps> = ({ children, isVertical, ...props }) => {
+const Group: React.SFC<GroupProps> = ({ children, isVertical, ...props }) => {
   const className = cx('group', props.className)
-  const Group = isVertical ? VGroup : HGroup
+  const StyledGroup = isVertical ? VGroup : HGroup
 
   const items = React.Children.map(
     compact(children),
@@ -16,15 +16,15 @@ const Component: React.SFC<GroupProps> = ({ children, isVertical, ...props }) =>
   )
 
   return (
-    <Group {...props} className={className}>
+    <StyledGroup {...props} className={className}>
       {items}
-    </Group>
+    </StyledGroup>
   )
 }
 
-Component.displayName = 'Group'
-Component.defaultProps = {
+Group.displayName = 'Group'
+Group.defaultProps = {
   children: []
 }
 
-export default Component
+export default Group
