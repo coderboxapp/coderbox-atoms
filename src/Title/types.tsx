@@ -3,5 +3,5 @@ import { Color, Size } from 'coderbox-atoms';
 
 export interface TitleProps extends Color, Size {
   className?: string
-  children: React.ReactChild
+  children: string | React.ReactChild[]
 }

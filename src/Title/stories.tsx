@@ -6,7 +6,6 @@ import Box from 'Box'
 import Subtitle from 'Subtitle'
 // import Link from '../Link'
 
-
 const stories = storiesOf('Title + Subtitle', module)
 
 stories.add('with different sizes',

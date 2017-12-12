@@ -4,7 +4,7 @@ import * as color from 'styled-utils/color'
 import { TitleProps } from './types';
 
 const styled = withProps<TitleProps>(styledComponent.h1)
-export const StyledComponent = styled`
+export const StyledTitle = styled`
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
   color: ${p => color.bg(p)};

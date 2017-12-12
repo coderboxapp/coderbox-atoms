@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled'
 import { withColor } from 'styled-utils'
 
-const radius = p => '3px'
+const radius = (p: any) => p.theme.components.dialog.radius
 
 export const Dialog = styled.div`
   font-family: ${p => p.theme.fonts.primary};
   border-radius: ${radius};
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  max-width: ${p => p.maxWidth || '100%'};
+  max-width: ${(p: any) => p.maxWidth || '100%'};
   border: 1px solid white;
   text-align: center;
   background-color: white;

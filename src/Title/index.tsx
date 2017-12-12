@@ -1,17 +1,17 @@
 import * as React from 'react'
 import * as cx from 'classnames'
-import { StyledComponent } from './styles';
+import { StyledTitle } from './styles';
 import { TitleProps } from './types';
 
-const Component: React.SFC<TitleProps> = ({ children, ...props }) => {
+const Title: React.SFC<TitleProps> = ({ children, ...props }) => {
   const className = cx(`title`, props.className)
   return (
-    <StyledComponent {...props} className={className}>{children}</StyledComponent>
+    <StyledTitle {...props} className={className}>{children}</StyledTitle>
   )
 }
 
-Component.displayName = 'Title'
-Component.defaultProps = {
+Title.displayName = 'Title'
+Title.defaultProps = {
 }
 
-export default Component
+export default Title

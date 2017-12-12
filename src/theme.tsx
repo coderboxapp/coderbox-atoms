@@ -45,6 +45,9 @@ const theme: Theme = {
     },
     group: {
       radius: '3px'
+    },
+    dialog: {
+      radius: '3px'
     }
   }
 }
