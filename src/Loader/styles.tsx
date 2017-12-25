@@ -6,21 +6,48 @@ const rotate360 = keyframes`
   to { transform: rotate(359deg); }
 `
 
-export const StyledComponent = styled.div`
-  animation: ${rotate360} 550ms infinite linear;
-  border: ${p => p.theme.components.loader.border};
-  border-radius: 999px;
-  border-right: 2px dotted;
-  border-top-color: transparent;
-  content: " ";
-  display: block;
+export const Container = styled.div`
   position: relative;
-  line-height: 1.5;
   width: ${p => p.theme.components.loader.size};
   height: ${p => p.theme.components.loader.size};
   margin: ${p => p.theme.components.loader.margin};
-  box-sizing: border-box;
-  
+  padding: ${p => p.theme.components.loader.borderSize};
+  ${withSize}
+`
+
+export const StyledLoader = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ${rotate360} 450ms infinite linear;
+  border-radius: 999px;
+  border: ${p => p.theme.components.loader.borderSize} solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  content: " ";
+  display: block;
+  width: ${p => p.theme.components.loader.size};
+  height: ${p => p.theme.components.loader.size};
+  margin: ${p => p.theme.components.loader.margin};
+  background-color: transparent !important;
+
   ${withColor}
+  ${withSize}
+`
+
+export const StyledLoaderShadow = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 999px;
+  content: " ";
+  display: block;
+  border: ${p => p.theme.components.loader.borderSize} solid;
+  width: ${p => p.theme.components.loader.size};
+  height: ${p => p.theme.components.loader.size};
+  margin: ${p => p.theme.components.loader.margin};
+  border-color: rgba(0, 0, 0, 0.4);
+
   ${withSize}
 `

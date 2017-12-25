@@ -7,6 +7,7 @@ export interface ButtonProps extends
   Helpers {
   className?: string
   isIcon?: boolean
+  hasShadow?: boolean
   children?: any 
   onClick?: Function
 }

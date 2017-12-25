@@ -10,6 +10,7 @@ declare module 'styled-utils' {
 }
 
 declare module 'styled-utils/color'
+declare module 'styled-is'
 declare module '@coderbox/hocs'
 
 declare module 'coderbox-atoms' {

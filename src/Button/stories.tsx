@@ -13,7 +13,7 @@ stories.add('simple usage',
       <div>
         <Box>
           <Button>Normal</Button>
-          <Button color='primary'>Primary</Button>
+          <Button color='primary' hasShadow>Primary</Button>
           <Button color='success'>Success</Button>
           <Button color='danger'>Danger</Button>
           <Button color='gray'>Gray</Button>

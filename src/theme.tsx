@@ -30,15 +30,16 @@ const theme: Theme = {
       radius: '3px'
     },
     loader: {
-      size: '1.30em',
-      border: '2px solid',
+      size: '1.125em',
+      borderSize: '3px',
       margin: '0'
     },
     icon: {},
     button: {
       height: '2.40em',
       padding: '0px 1.0em',
-      radius: '3px'
+      radius: '3px',
+      boxShadow: '0 -2px 0 rgba(0,0,0,0.20) inset'
     },
     link: {
       textDecoration: 'none'

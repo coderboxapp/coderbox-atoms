@@ -29,7 +29,7 @@ export interface IsIconProps {
 export const isIcon = ({ isIcon }: IsIconProps): any => {
   if (!isIcon) return
   return css`
-    padding: 0px 0.5em;
+    padding: 0px 0.6em;
     & .icon {
       margin: 0;
     }
