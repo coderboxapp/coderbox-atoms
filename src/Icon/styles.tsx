@@ -1,5 +1,7 @@
 import styled from 'styled'
-import { withColor, withSize, isMarginless, isPaddingless, isCircular  } from 'styled-utils'
+import { withSize, isMarginless, isPaddingless, isCircular  } from 'styled-utils'
+import * as color from 'styled-utils/color'
+import is from 'styled-is'
 
 export const StyledIcon = styled.i`
   display: inline-flex;
@@ -9,8 +11,12 @@ export const StyledIcon = styled.i`
   width: 1.6em;
   height: 1.6em;
   line-height: 1.5;
+  color: ${color.bg};
 
-  ${withColor}
+  ${is('isInverted')`
+    background-color: ${color.text};
+  `}
+
   ${withSize}
   ${isMarginless}
   ${isPaddingless}

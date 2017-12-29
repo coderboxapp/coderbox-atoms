@@ -8,22 +8,23 @@ storiesOf('Icon', module)
   .add('simple usage', withTheme(() => {
     return (
       <div>
-        <Box space='0.5em'>
+        <Box space='0.5em' color='light'>
+          <Icon name='star' color='white' />
           <Icon name='star' color='black' />
-          <Icon name='star' type='s' color='gray' />
-          <Icon name='github-square' type='b' color='primary' />
-          <Icon name='gift' color='success' />
-          <Icon name='bug' color='danger' hasBorder />
+          <Icon name='star' color='gray' />
+          <Icon name='star' color='primary' />
+          <Icon name='star' color='success' />
+          <Icon name='star' color='danger' />
         </Box>
         <Box>
           <Icon name='star' color='black' isInverted />
           <Icon name='star' color='gray' isInverted />
           <Icon name='github' color='primary'isInverted />
           <Icon name='gift' color='success' isInverted />
-          <Icon name='bug' color='danger' isInverted hasBorder />
+          <Icon name='bug' color='danger' isInverted />
         </Box>
         <Box>
-          <Icon name='star' color='black' isCircular hasBorder />
+          <Icon name='star' color='black' isCircular />
           <Icon name='github' color='primary' isCircular isInverted />
           <Icon name='bug' color='success' isCircular isInverted />
         </Box>
