@@ -13,6 +13,7 @@ const Icon: React.SFC<IconProps> = ({ name, ...props }) => {
 
 Icon.displayName = 'Icon'
 Icon.defaultProps = {
+  color: 'gray'
 }
 
 export default Icon
