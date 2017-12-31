@@ -11,7 +11,10 @@ export const StyledIcon = styled.i`
   width: 1.6em;
   height: 1.6em;
   line-height: 1.5;
-  color: ${color.bg};
+
+  ${is('color')`
+    color: ${color.bg};
+  `}
 
   ${is('isInverted')`
     background-color: ${color.text};
