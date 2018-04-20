@@ -3,18 +3,10 @@
  "editor.renderWhitespace": "boundary",
   "editor.tabSize": 2,
   "javascript.validate.enable": false,
-  "standard.options": {
-    "env": [ "jest" ],
-    "globals": [],
-    "ignore": [
-      "node_modules/**",
-      "lib/**"
-    ],
-    "parser": "babel-eslint"
-  },
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.jsxSingleQuote": true,
-  "prettier.semi": false,
-  "prettier.spaceBeforeFunctionParen": true
+  "standard.usePackageJson": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript"
+  ]
 }

@@ -1,15 +1,19 @@
 {
   "name": "@coderbox/atoms",
+<<<<<<< HEAD
   "version": "1.1.4",
+=======
+  "version": "1.1.7",
+>>>>>>> e3ff6595593ef6a3e06fd92200fbe0b3a1c12f4f
   "description": "React Components used at @Coderbox",
   "main": "lib/coderbox-atoms.js",
   "scripts": {
     "prepare": "yarn build",
     "build": "webpack --env production",
     "start": "start-storybook -p 6005",
+    "standard": "standard --parser typescript-eslint-parser --plugin typescript *.tsx",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "flow": "flow"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -28,7 +32,8 @@
       "node_modules/**",
       "lib/**"
     ],
-    "parser": "babel-eslint"
+    "parser": "typescript-eslint-parser",
+    "plugins": [ "typescript" ]
   },
   "author": "Ghiura Alexandru <ghalex@gmail.com>",
   "license": "ISC",
@@ -37,16 +42,18 @@
     "@storybook/react": "^3.2.4",
     "@storybook/storybook-deployer": "^2.0.0",
     "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "^6.26.0",
     "babel-eslint": "7.2.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-styled-components": "^1.1.7",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "flow-bin": "^0.54.1",
+    "eslint-plugin-typescript": "^0.8.1",
     "standard": "^10.0.3",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2",
+    "typescript-eslint-parser": "^11.0.0",
     "webpack": "^3.5.4",
     "webpack-node-externals": "^1.6.0",
     "yargs": "^8.0.2"
