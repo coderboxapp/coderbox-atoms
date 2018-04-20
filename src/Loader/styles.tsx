@@ -8,10 +8,10 @@ const rotate360 = keyframes`
 
 export const Container = styled.div`
   position: relative;
-  width: ${p => p.theme.components.loader.size};
-  height: ${p => p.theme.components.loader.size};
-  margin: ${p => p.theme.components.loader.margin};
-  padding: ${p => p.theme.components.loader.borderSize};
+  width: ${p => p.theme.options.loader.size};
+  height: ${p => p.theme.options.loader.size};
+  margin: ${p => p.theme.options.loader.margin};
+  padding: ${p => p.theme.options.loader.borderSize};
   ${withSize}
 `
 
@@ -21,15 +21,15 @@ export const StyledLoader = styled.div`
   left: 0;
   animation: ${rotate360} 450ms infinite linear;
   border-radius: 999px;
-  border: ${p => p.theme.components.loader.borderSize} solid;
+  border: ${p => p.theme.options.loader.borderSize} solid;
   border-top-color: transparent;
   border-left-color: transparent;
   border-bottom-color: transparent;
   content: " ";
   display: block;
-  width: ${p => p.theme.components.loader.size};
-  height: ${p => p.theme.components.loader.size};
-  margin: ${p => p.theme.components.loader.margin};
+  width: ${p => p.theme.options.loader.size};
+  height: ${p => p.theme.options.loader.size};
+  margin: ${p => p.theme.options.loader.margin};
   background-color: transparent !important;
 
   ${withColor}
@@ -43,10 +43,10 @@ export const StyledLoaderShadow = styled.div`
   border-radius: 999px;
   content: " ";
   display: block;
-  border: ${p => p.theme.components.loader.borderSize} solid;
-  width: ${p => p.theme.components.loader.size};
-  height: ${p => p.theme.components.loader.size};
-  margin: ${p => p.theme.components.loader.margin};
+  border: ${p => p.theme.options.loader.borderSize} solid;
+  width: ${p => p.theme.options.loader.size};
+  height: ${p => p.theme.options.loader.size};
+  margin: ${p => p.theme.options.loader.margin};
   border-color: rgba(0, 0, 0, 0.4);
 
   ${withSize}

@@ -7,8 +7,8 @@ const styled = withProps<BoxProps>(styledComponent.div)
 
 export const StyledBox = styled`
   font-family: ${p => p.theme.fonts.primary};
-  border-radius: ${p => p.theme.components.box.radius};
-  box-shadow: ${p => p.theme.components.box.boxShadow};
+  border-radius: ${p => p.theme.options.box.radius};
+  box-shadow: ${p => p.theme.options.box.boxShadow};
   position: relative;
   padding: ${(p): string => p.padding || '0px'};
 

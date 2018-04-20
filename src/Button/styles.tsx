@@ -6,9 +6,9 @@ import { ButtonProps } from './types';
 
 const styled = withProps<ButtonProps>(styledComponent.div)
 export const StyledButton = styled`
-  height: ${p => p.theme.components.button.height};
-  padding: ${p => p.theme.components.button.padding};
-  border-radius: ${p => p.theme.components.button.radius};
+  height: ${p => p.theme.options.button.height};
+  padding: ${p => p.theme.options.button.padding};
+  border-radius: ${p => p.theme.options.button.radius};
   font-family: ${p => p.theme.fonts.primary};
   font-weight: 400;
   display: inline-flex;
@@ -22,7 +22,7 @@ export const StyledButton = styled`
   user-select: none;
   text-decoration: none;
 
-  ${is('hasShadow')`box-shadow: ${(p:any) => p.theme.components.button.boxShadow};`}
+  ${is('hasShadow')`box-shadow: ${(p:any) => p.theme.options.button.boxShadow};`}
 
   &:not(:last-child) {
     margin: 0 0.25em 0 0;

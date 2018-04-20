@@ -1,7 +1,7 @@
 import styled from 'styled'
 import { withColor } from 'styled-utils'
 
-const radius = (p: any) => p.theme.components.dialog.radius
+const radius = (p: any) => p.theme.options.dialog.radius
 
 export const Dialog = styled.div`
   font-family: ${p => p.theme.fonts.primary};

@@ -24,7 +24,7 @@ const theme: Theme = {
     xlarge: '2.0rem',
     huge: '3rem'
   },
-  components: {
+  options: {
     box: {
       boxShadow: '0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)',
       radius: '3px'
@@ -34,7 +34,6 @@ const theme: Theme = {
       borderSize: '3px',
       margin: '0'
     },
-    icon: {},
     button: {
       height: '2.40em',
       padding: '0px 1.0em',

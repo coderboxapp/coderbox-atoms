@@ -1,6 +1,6 @@
 import styled from 'styled'
 
-const radius = (p: any) => p.theme.components.group.radius
+const radius = (p: any) => p.theme.options.group.radius
 
 export const HGroup = styled.div`
   display: inline-flex;

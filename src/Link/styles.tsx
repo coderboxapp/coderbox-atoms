@@ -8,7 +8,7 @@ export const StyledComponent = styled.a`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  text-decoration: ${p => p.theme.components.link.textDecoration};
+  text-decoration: ${p => p.theme.options.link.textDecoration};
   flex-direction: ${(p: LinkProps): string => p.column ? 'column' : 'row'};
   color: ${p => color.bg(p)};
 

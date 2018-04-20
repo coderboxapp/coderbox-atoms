@@ -66,6 +66,6 @@ declare module 'coderbox-atoms' {
       xlarge: string
       huge: string
     }
-    components: any
+    options: any
   }
 } 
